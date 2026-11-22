@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { categoryById } from '../data/categories';
 import { Feedback, ResultBadge } from '../components/Feedback';
-import { IconArrowLeft, IconArrowRight, IconCheck, IconClock, IconClose, IconHalf, IconX } from '../components/Icons';
+import { IconArrowLeft, IconArrowRight, IconCheck, IconClock, IconClose, IconHalf, IconHelp, IconX } from '../components/Icons';
 import { CalcView, FlashcardView, InputView, MatchView, McView, type Outcome } from '../components/QuestionViews';
 import { useSwipe } from '../components/useSwipe';
 import { ConfirmSheet } from '../components/ConfirmSheet';
@@ -109,6 +109,8 @@ export function Session({ mode, title, items: initial, onRecord, onExamDone, onC
     [index, item, exam, items.length, onRecord],
   );
 
+  const dontKnow = () => onAnswer({ result: 'wrong', score: 0, dontKnow: true });
+
   const goNext = () => {
     setActionsState(null);
     setIndex((i) => {
@@ -209,7 +211,7 @@ export function Session({ mode, title, items: initial, onRecord, onExamDone, onC
                   <Feedback item={item} result={outcome.result} score={outcome.score} compact />
                 </div>
               ) : (
-                <Feedback item={item} result={outcome.result} score={outcome.score} />
+                <Feedback item={item} result={outcome.result} score={outcome.score} dontKnow={outcome.dontKnow} />
               )}
             </div>
           )}
@@ -233,11 +235,23 @@ export function Session({ mode, title, items: initial, onRecord, onExamDone, onC
               </button>
             </div>
           ) : (
-            actions ?? (
-              <p className="py-4 text-center text-sm text-stone-500 dark:text-stone-400">
-                {exam ? 'Antwort antippen' : 'Antwort antippen – danach nach links wischen für weiter'}
-              </p>
-            )
+            <div className="flex items-stretch gap-2">
+              {!(item.kind === 'question' && item.question.type === 'flashcard') && (
+                <button
+                  onClick={dontKnow}
+                  className="flex shrink-0 items-center justify-center gap-1.5 rounded-2xl bg-white px-4 py-3 text-[15px] font-semibold text-stone-700 shadow-soft active:scale-[0.97] dark:bg-stone-900 dark:text-stone-200"
+                >
+                  <IconHelp size={20} /> Keine Ahnung
+                </button>
+              )}
+              <div className="min-w-0 flex-1">
+                {actions ?? (
+                  <p className="flex h-full items-center justify-center px-1 py-3 text-center text-sm text-stone-500 dark:text-stone-400">
+                    Antwort antippen
+                  </p>
+                )}
+              </div>
+            </div>
           )}
         </div>
       </footer>
@@ -328,7 +342,7 @@ function Summary({
                     </button>
                     {open === i && (
                       <div className="border-t border-stone-100 p-3 dark:border-stone-800">
-                        <Feedback item={it} result={r} score={o?.score ?? 0} />
+                        <Feedback item={it} result={r} score={o?.score ?? 0} dontKnow={o?.dontKnow} />
                       </div>
                     )}
                   </div>

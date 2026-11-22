@@ -84,6 +84,13 @@ export const IconBulb = (p: P) => (
     <path d="M9 18h6m-5 3h4M12 3a6 6 0 0 0-3.5 10.9c.6.4 1 1.1 1 1.8V16h5v-.3c0-.7.4-1.4 1-1.8A6 6 0 0 0 12 3Z" />
   </svg>
 );
+export const IconHelp = (p: P) => (
+  <svg {...base(p)}>
+    <circle cx="12" cy="12" r="9.5" />
+    <path d="M9.3 9.2a2.8 2.8 0 0 1 5.4 1c0 1.9-2.7 2.4-2.7 4" />
+    <path d="M12 17.5h.01" />
+  </svg>
+);
 export const IconAlert = (p: P) => (
   <svg {...base(p)}>
     <path d="M12 3.5 2.5 20h19L12 3.5Z" />

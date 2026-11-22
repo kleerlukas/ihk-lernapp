@@ -12,6 +12,8 @@ export interface Outcome {
   score: number;
   /** Eingaben, damit die Karte beim Zurückblättern so aussieht wie beantwortet */
   detail?: unknown;
+  /** „Keine Ahnung“ gedrückt: zählt als falsch, Lösung wird ausführlich erklärt */
+  dontKnow?: boolean;
 }
 
 export interface ViewProps<Q> {

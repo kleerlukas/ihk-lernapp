@@ -157,4 +157,31 @@ describe('App', () => {
     });
     expect(screen.getByText('Heute fällig')).toBeTruthy();
   });
+  it('„Keine Ahnung“ zeigt Lösung + Erklärung und zählt als nicht gewusst', () => {
+    render(<App />);
+    fireEvent.click(screen.getByRole('button', { name: /Nur Rechnen/ }));
+    fireEvent.click(screen.getByRole('button', { name: /Keine Ahnung/ }));
+    expect(screen.getByRole('status').textContent).toMatch(/Keine Ahnung – hier ist die Erklärung/);
+    expect(screen.getByText('Lösung')).toBeTruthy();
+    expect(screen.getByText('Warum das so ist')).toBeTruthy();
+    expect(screen.getByText('Rechenweg')).toBeTruthy();
+    expect(screen.getByText(/von 11/)).toBeTruthy(); // kommt in der Sitzung noch einmal
+    const saved = JSON.parse(localStorage.getItem('ap2-lernapp-progress-v1')!);
+    const card = Object.values(saved.cards)[0] as { box: number; wrong: number };
+    expect(card).toMatchObject({ box: 1, wrong: 1 });
+  });
+
+  it('„Keine Ahnung“ gibt es bei Wissensfragen, aber nicht bei Karteikarten', () => {
+    render(<App />);
+    fireEvent.click(screen.getByRole('button', { name: /Lernen starten/ }));
+    for (let n = 0; n < 15; n++) {
+      const isFlash = !!screen.queryByRole('button', { name: 'Aufdecken' });
+      expect(!!screen.queryByRole('button', { name: /Keine Ahnung/ })).toBe(!isFlash);
+      answerCurrent();
+      const next = screen.queryByRole('button', { name: /Weiter|Abschließen/ });
+      if (!next) break;
+      fireEvent.click(next);
+      if (screen.queryByText('Geschafft!')) break;
+    }
+  });
 });

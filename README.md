@@ -237,7 +237,7 @@ Für alle gilt: `id` (klein, nur `a-z 0-9 -`, eindeutig), `prompt`, `explanation
 
 **Leitner-Fächer:** richtig → ein Fach höher, teilweise/unsicher → ein Fach tiefer, falsch → Fach 1. Wiederholung nach 0 / 1 / 3 / 7 / 14 Tagen. Falsch beantwortete Karten kommen außerdem in derselben Sitzung ein paar Karten später noch einmal.
 
-**Bedienung:** Antwort antippen bzw. eingeben → „Prüfen“. Danach mit „Weiter“ oder **nach links wischen** zur nächsten Karte, **nach rechts wischen** zurück.
+**Bedienung:** Antwort antippen bzw. eingeben → „Prüfen“. Weißt du es nicht, tippe **„Keine Ahnung“**: Du bekommst sofort Lösung, Erklärung, Eselsbrücke/typische Falle (bei Rechenaufgaben den Rechenweg), die Karte geht zurück in Fach 1 und kommt in derselben Sitzung noch einmal. Danach mit „Weiter“ oder **nach links wischen** zur nächsten Karte, **nach rechts wischen** zurück.
 
 **Eingaben werden tolerant verglichen:** Groß-/Kleinschreibung und Leerzeichen egal, `8,76` = `8.76`, `1.024` = `1024`, `/27` = `27` = `255.255.255.224`, IPv6 in Kurz- oder Langform.
 

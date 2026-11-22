@@ -22,9 +22,15 @@ const STYLE: Record<Result, { text: string; cls: string; Icon: typeof IconCheck 
   },
 };
 
+const DONT_KNOW = {
+  text: 'Keine Ahnung – hier ist die Erklärung',
+  cls: 'bg-sky-50 text-sky-900 ring-sky-200 dark:bg-sky-950/60 dark:text-sky-100 dark:ring-sky-900',
+  Icon: IconBulb,
+};
+
 /** Ergebnis-Abzeichen: Farbe + Icon + Text (nie Farbe allein). */
-export function ResultBadge({ result, label, score }: { result: Result; label?: string; score?: number }) {
-  const s = STYLE[result];
+export function ResultBadge({ result, label, score, dontKnow }: { result: Result; label?: string; score?: number; dontKnow?: boolean }) {
+  const s = dontKnow ? DONT_KNOW : STYLE[result];
   return (
     <div role="status" className={`flex items-center gap-2 rounded-2xl px-4 py-3 font-semibold ring-1 ${s.cls}`}>
       <s.Icon size={22} />
@@ -69,6 +75,7 @@ export function Feedback({
   score,
   showSolution = true,
   compact = false,
+  dontKnow = false,
 }: {
   item: SessionItem;
   result: Result;
@@ -76,6 +83,8 @@ export function Feedback({
   showSolution?: boolean;
   /** Karteikarte: Antwort + Erklärung stehen schon auf der Rückseite */
   compact?: boolean;
+  /** „Keine Ahnung“: Erklärung hervorheben, damit du es beim nächsten Mal weißt */
+  dontKnow?: boolean;
 }) {
   const isCalc = item.kind === 'calc';
   const meta = isCalc ? item.task : item.question;
@@ -84,17 +93,22 @@ export function Feedback({
   const reviewNote = isCalc ? item.task.reviewNote : item.question.reviewNote;
   return (
     <div className="fade-up space-y-3" aria-live="polite">
-      {!compact && <ResultBadge result={result} score={score} />}
+      {!compact && <ResultBadge result={result} score={score} dontKnow={dontKnow} />}
       {showSolution && !compact && (
         <Box icon={<IconCheck size={14} />} title="Lösung" tone="bg-stone-100 dark:bg-stone-800/70">
           <RichText text={solutionText(item)} className="font-semibold" />
         </Box>
       )}
-      {!compact && (
-        <p className="px-1 text-[15px] leading-relaxed text-stone-700 dark:text-stone-300">
-          <RichText text={explanation} />
-        </p>
-      )}
+      {!compact &&
+        (dontKnow ? (
+          <Box icon={<IconBulb size={14} />} title="Warum das so ist" tone="bg-sky-50 text-sky-950 dark:bg-sky-950/50 dark:text-sky-100">
+            <RichText text={explanation} />
+          </Box>
+        ) : (
+          <p className="px-1 text-[15px] leading-relaxed text-stone-700 dark:text-stone-300">
+            <RichText text={explanation} />
+          </p>
+        ))}
       {isCalc && (
         <Box icon={<IconCheck size={14} />} title="Rechenweg" tone="bg-sky-50 text-sky-950 dark:bg-sky-950/50 dark:text-sky-100">
           <ol className="list-decimal space-y-1 pl-5 font-mono text-[13px]">
