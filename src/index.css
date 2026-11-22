@@ -1,0 +1,187 @@
+@import 'tailwindcss';
+
+/* Dunkel nach Systemeinstellung – außer eine Seite setzt data-theme="light"/"dark" ausdrücklich */
+@custom-variant dark {
+  &:where([data-theme='dark'], [data-theme='dark'] *) {
+    @slot;
+  }
+  @media (prefers-color-scheme: dark) {
+    &:where(:root:not([data-theme='light']), :root:not([data-theme='light']) *) {
+      @slot;
+    }
+  }
+}
+
+@theme {
+  --font-sans: ui-sans-serif, -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace;
+  --shadow-soft: 0 1px 2px rgb(0 0 0 / 0.04), 0 8px 24px -6px rgb(0 0 0 / 0.08);
+  --shadow-lift: 0 2px 4px rgb(0 0 0 / 0.05), 0 16px 40px -8px rgb(0 0 0 / 0.14);
+}
+
+:root {
+  color-scheme: light;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  @apply bg-stone-100 text-stone-900 dark:bg-stone-950 dark:text-stone-100;
+  overscroll-behavior-y: none;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* iOS zoomt in Eingabefelder unter 16px – deshalb mindestens 16px */
+input,
+select,
+textarea {
+  font-size: 16px;
+}
+
+button {
+  touch-action: manipulation;
+}
+
+/* ---------- Karteikarte umdrehen ---------- */
+.flip {
+  perspective: 1400px;
+}
+.flip-inner {
+  display: grid;
+  transform-style: preserve-3d;
+  transition: transform 0.55s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.flip-inner > * {
+  grid-area: 1 / 1;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.flip-back {
+  transform: rotateY(180deg);
+}
+.flip.flipped .flip-inner {
+  transform: rotateY(180deg);
+}
+
+@keyframes card-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.card-in {
+  animation: card-in 0.32s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.fade-up {
+  animation: fade-up 0.25s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flip-inner,
+  .card-in,
+  .fade-up {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+  }
+}
+:root[data-theme='dark'] {
+  color-scheme: dark;
+}
+
+.pb-safe {
+  padding-bottom: max(env(safe-area-inset-bottom), 0.75rem);
+}
+.pt-safe {
+  padding-top: max(env(safe-area-inset-top), 0.75rem);
+}
+
+/* ---------- Syntax-Highlighting (highlight.js), hell + dunkel ---------- */
+.hljs-keyword,
+.hljs-built_in,
+.hljs-type {
+  color: #7c3aed;
+}
+.hljs-string {
+  color: #047857;
+}
+.hljs-number,
+.hljs-literal {
+  color: #c2410c;
+}
+.hljs-comment {
+  color: #78716c;
+  font-style: italic;
+}
+.hljs-title,
+.hljs-title.function_ {
+  color: #0369a1;
+}
+.hljs-operator,
+.hljs-punctuation {
+  color: #57534e;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .hljs-keyword, :root:not([data-theme='light']) .hljs-built_in, :root:not([data-theme='light']) .hljs-type {
+    color: #c4b5fd;
+  }
+  :root:not([data-theme='light']) .hljs-string {
+    color: #6ee7b7;
+  }
+  :root:not([data-theme='light']) .hljs-number, :root:not([data-theme='light']) .hljs-literal {
+    color: #fdba74;
+  }
+  :root:not([data-theme='light']) .hljs-comment {
+    color: #a8a29e;
+  }
+  :root:not([data-theme='light']) .hljs-title, :root:not([data-theme='light']) .hljs-title.function_ {
+    color: #7dd3fc;
+  }
+  :root:not([data-theme='light']) .hljs-operator, :root:not([data-theme='light']) .hljs-punctuation {
+    color: #d6d3d1;
+  }
+}
+:root[data-theme='dark'] .hljs-keyword, :root[data-theme='dark'] .hljs-built_in, :root[data-theme='dark'] .hljs-type {
+  color: #c4b5fd;
+}
+:root[data-theme='dark'] .hljs-string {
+  color: #6ee7b7;
+}
+:root[data-theme='dark'] .hljs-number, :root[data-theme='dark'] .hljs-literal {
+  color: #fdba74;
+}
+:root[data-theme='dark'] .hljs-comment {
+  color: #a8a29e;
+}
+:root[data-theme='dark'] .hljs-title, :root[data-theme='dark'] .hljs-title.function_ {
+  color: #7dd3fc;
+}
+:root[data-theme='dark'] .hljs-operator, :root[data-theme='dark'] .hljs-punctuation {
+  color: #d6d3d1;
+}
+
