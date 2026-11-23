@@ -4,6 +4,7 @@ import { storageNeedGenerator, unitGenerator } from './storage';
 import { raidCapacityGenerator, raidDisksGenerator } from './raid';
 import { availabilityGenerator, powerGenerator, transferGenerator } from './formulas';
 import { chmodGenerator, ttlGenerator } from './misc';
+import { mtbfGenerator, poeGenerator, usvGenerator } from './hardware';
 import { createRng, type CalcTask, type Generator } from './types';
 
 export const GENERATORS: Generator[] = [
@@ -19,6 +20,9 @@ export const GENERATORS: Generator[] = [
   transferGenerator,
   powerGenerator,
   availabilityGenerator,
+  mtbfGenerator,
+  usvGenerator,
+  poeGenerator,
   ttlGenerator,
   chmodGenerator,
 ];

@@ -4,7 +4,7 @@ import { parseQuestions, type CategoryId } from './data/schema';
 import { categoryById } from './data/categories';
 import { generatorById } from './generators';
 import { ihkGrade, loadProgress, recordAnswer, saveProgress, type Progress, type Result } from './lib/progress';
-import { buildSession, type Mode, type SessionItem } from './lib/session';
+import { activeQuestions, buildSession, type Mode, type SessionItem } from './lib/session';
 import { IconChart, IconGear, IconGrid, IconHome } from './components/Icons';
 import { Home } from './pages/Home';
 import { Session } from './pages/Session';
@@ -31,8 +31,14 @@ const loaded = parseQuestions(questionsFile);
 const generatedAt = (questionsFile as { generatedAt?: string }).generatedAt ?? '–';
 
 export default function App() {
-  const { questions, errors } = loaded;
+  const { questions: allQuestions, errors } = loaded;
   const [progress, setProgressState] = useState<Progress>(loadProgress);
+  // Standard: nur prüfungsrelevante Kern-Fragen. Extra-Fragen nur, wenn in den Einstellungen eingeschaltet.
+  const showExtra = progress.settings.showExtra;
+  const questions = useMemo(
+    () => activeQuestions(allQuestions, showExtra),
+    [allQuestions, showExtra],
+  );
   const [tab, setTabState] = useState<Tab>(() => tabFromHash());
   // Unterseiten bekommen einen Hash (#themen …) → Zurück-Geste/-Taste des Browsers führt zur Startseite
   useEffect(() => {
@@ -111,7 +117,7 @@ export default function App() {
           <Topics questions={questions} progress={progress} onTopic={(c) => start('topic', { category: c })} onCalc={(g) => start('calc', { generatorIds: [g] })} onBack={goHome} />
         )}
         {tab === 'stats' && <Stats questions={questions} progress={progress} onBack={goHome} />}
-        {tab === 'settings' && <Settings questions={questions} progress={progress} loadErrors={errors} generatedAt={generatedAt} setProgress={setProgress} onBack={goHome} />}
+        {tab === 'settings' && <Settings questions={allQuestions} progress={progress} loadErrors={errors} generatedAt={generatedAt} setProgress={setProgress} onBack={goHome} />}
       </main>
       <nav className="pb-safe shrink-0 border-t border-stone-200/70 bg-stone-100/90 backdrop-blur dark:border-stone-800 dark:bg-stone-950/90" aria-label="Hauptnavigation">
         <ul className="mx-auto grid max-w-xl grid-cols-4">

@@ -8,6 +8,8 @@ import type { CategoryId } from '../src/data/schema.ts';
 export interface Frontmatter {
   autoExtract: boolean;
   category?: string;
+  /** Standard-Relevanz für automatisch erzeugte Fragen dieser Datei (kern/extra). */
+  relevanz?: 'kern' | 'extra';
 }
 
 export function parseFrontmatter(md: string): { meta: Frontmatter; body: string; offset: number } {
@@ -19,6 +21,7 @@ export function parseFrontmatter(md: string): { meta: Frontmatter; body: string;
     if (!kv || line.trim().startsWith('#')) continue;
     if (kv[1] === 'autoExtract') meta.autoExtract = kv[2] !== 'false';
     if (kv[1] === 'category') meta.category = kv[2];
+    if (kv[1] === 'relevanz' && (kv[2] === 'kern' || kv[2] === 'extra')) meta.relevanz = kv[2];
   }
   return { meta, body: md, offset: 0 };
 }

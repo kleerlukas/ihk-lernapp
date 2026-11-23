@@ -2,8 +2,9 @@
 
 Lern-App im Karteikarten-Stil für die schriftliche IHK-Abschlussprüfung Teil 2 (Fachinformatiker/in Systemintegration). Optimiert fürs iPhone, läuft komplett offline und braucht kein Konto.
 
-- **302 Fragen** aus dem Lernzettel in 11 Kategorien: Multiple Choice, Eingabe, Zuordnung, Karteikarte
-- **14 Rechen-Generatoren** mit Zufallszahlen und Rechenweg (Subnetting, VLSM, IPv6, RAID, Übertragungszeit, Stromkosten, Verfügbarkeit, TTL, chmod …)
+- **404 Fragen** in 11 Kategorien: Multiple Choice, Eingabe, Zuordnung, Karteikarte. 302 davon stammen aus dem Lernzettel, 102 aus den Ergänzungen (`content/ergaenzungen.md`)
+- **Prüfungsrelevanz:** Jede Frage ist als `kern` (kam in den IHK-Prüfungen FISI 2021–2025 vor) oder `extra` (Nice-to-know) eingestuft. Standardmäßig lernst du nur Kern-Fragen. Extra-Fragen schaltest du unter **Einstellungen → Auch Extra-Fragen anzeigen** dazu
+- **17 Rechen-Generatoren** mit Zufallszahlen und Rechenweg (Subnetting, VLSM, IPv6, RAID, Übertragungszeit, Stromkosten, Verfügbarkeit, MTBF, USV-Laufzeit, PoE-Budget, TTL, chmod …)
 - **Leitner-System** mit 5 Fächern, Modi „Tägliches Lernen“, „Thema“, „Schwächen“, „Prüfungssimulation“ (Note nach IHK-Schlüssel), „Nur Rechnen“
 - Statistik, Lernserie, Tagesziel, Export/Import des Lernstands
 
@@ -150,6 +151,7 @@ content/
    ```markdown
    ---
    category: osi
+   relevanz: kern
    ---
 
    ## DNS-Vertiefung
@@ -208,7 +210,7 @@ Entweder als ` ```quiz `-Block direkt in der Markdown-Datei (JSON, ein Objekt od
 | `match` | `pairs` (2–8 × `left`/`right`), optional `options` | |
 | `flashcard` | `answer` | Selbstbewertung Gewusst/Unsicher/Nicht gewusst |
 
-Für alle gilt: `id` (klein, nur `a-z 0-9 -`, eindeutig), `prompt`, `explanation`. Optional: `mnemonic` (Eselsbrücke), `pitfall` (typische Falle), `code` (`{ "lang": "csharp" | "sql" | "bash", "src": "…" }`), `needsReview` + `reviewNote`.
+Für alle gilt: `id` (klein, nur `a-z 0-9 -`, eindeutig), `prompt`, `explanation` und `relevanz` (`"kern"` oder `"extra"`). In `content/curated/` muss `relevanz` an jeder Frage oder einmal oben in der Datei stehen, sonst bricht `npm run generate` ab. Bei automatisch erzeugten Fragen gilt `relevanz` aus dem Kopf der Markdown-Datei (Standard: `kern`). Optional: `mnemonic` (Eselsbrücke), `pitfall` (typische Falle), `code` (`{ "lang": "csharp" | "sql" | "bash", "src": "…" }`), `needsReview` + `reviewNote`.
 
 **`ref` – die Quellenprüfung:** Trage in `ref` ein kurzes Zitat aus der Markdown-Datei ein. `npm run generate` bricht mit Fehler ab, wenn dieses Zitat dort nicht vorkommt (Formatierung wie `**` oder `|` wird ignoriert). So bleibt jede Frage am Lernzettel festgemacht.
 
@@ -218,6 +220,17 @@ Für alle gilt: `id` (klein, nur `a-z 0-9 -`, eindeutig), `prompt`, `explanation
 
 - `npm run generate` und `npm run build` zeigen genau an, welche Frage in welcher Datei fehlerhaft ist, und brechen ab.
 - Sollte trotzdem eine kaputte Frage in die App gelangen, wird sie beim Start übersprungen und unter **Einstellungen → Inhalte** aufgelistet. Die App stürzt nicht ab.
+
+### Prüfungsrelevanz: kern oder extra?
+
+- **kern:** kam in den IHK-Prüfungen FISI 2021–2025 vor oder ist Grundlage dafür (z. B. Subnetting, RAID, Backup-Arten, die wichtigen Ports wie 22, 53, 443, 3389).
+- **extra:** fachlich richtig, aber in diesen Prüfungen nicht abgefragt (z. B. die Ports von MySQL oder MQTT, Wi-Fi-Generationsnamen, Aufbewahrungsfristen im Detail).
+
+Extra-Fragen werden nie gelöscht. Sie tauchen nur in keinem Lernmodus auf, solange der Schalter in den Einstellungen aus ist. Dein Lernfortschritt bei ihnen bleibt erhalten.
+
+### Die Ergänzungen
+
+`content/ergaenzungen.md` enthält Prüfungsthemen, die im Lernzettel fehlen oder zu knapp sind (z. B. TLS-Handshake, nslookup-Ausgabe, MDM, SPF/DKIM, Router-on-a-Stick). Die Fragen dazu stehen in `content/curated/12-ergaenzungen.json`, ihre Zitate werden gegen `ergaenzungen.md` geprüft.
 
 ### Der Lernzettel selbst
 

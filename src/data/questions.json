@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-22",
+ "generatedAt": "2026-11-23",
  "questions": [
   {
    "id": "port-ssh",
@@ -14,6 +14,7 @@
     "line": 27
    },
    "ref": "SSH / SCP / SFTP 22",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -33,6 +34,7 @@
     "line": 27
    },
    "ref": "143 / 993",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -55,6 +57,7 @@
     "line": 27
    },
    "ref": "143 / 993",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -74,6 +77,7 @@
     "line": 27
    },
    "ref": "110 / 995",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -95,6 +99,7 @@
     "line": 27
    },
    "ref": "110 / 995",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -113,6 +118,7 @@
     "line": 27
    },
    "ref": "DNS 53",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -132,6 +138,7 @@
     "line": 27
    },
    "ref": "UDP (+ TCP bei Zonentransfer/großen Antworten)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -153,6 +160,7 @@
     "line": 27
    },
    "ref": "67 / 68",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -172,6 +180,7 @@
     "line": 27
    },
    "ref": "TFTP 69 UDP PXE-Boot, Firmware",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -193,6 +202,7 @@
     "line": 27
    },
    "ref": "HTTP 80",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -211,6 +221,7 @@
     "line": 27
    },
    "ref": "HTTPS 443",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -229,6 +240,7 @@
     "line": 27
    },
    "ref": "TCP (HTTP/3: UDP)",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -251,6 +263,7 @@
     "line": 27
    },
    "ref": "21 = Befehle",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -272,6 +285,7 @@
     "line": 27
    },
    "ref": "Telnet 23 TCP unverschlüsselt, nur zum Testen",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -293,6 +307,7 @@
     "line": 27
    },
    "ref": "SMTP (Server zu Server) 25",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -312,6 +327,7 @@
     "line": 27
    },
    "ref": "SMTP Submission (STARTTLS) 587",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -333,6 +349,7 @@
     "line": 27
    },
    "ref": "SMTPS (implizites TLS) 465",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -354,6 +371,7 @@
     "line": 27
    },
    "ref": "Kerberos 88 TCP/UDP Active Directory",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -376,6 +394,7 @@
     "line": 27
    },
    "ref": "NTP 123 UDP Zeitsynchronisation",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -395,6 +414,7 @@
     "line": 27
    },
    "ref": "161 / 162",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -416,6 +436,7 @@
     "line": 27
    },
    "ref": "161 / 162",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -434,6 +455,7 @@
     "line": 27
    },
    "ref": "389 / 636",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -455,6 +477,7 @@
     "line": 27
    },
    "ref": "389 / 636",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -473,6 +496,7 @@
     "line": 27
    },
    "ref": "SMB / CIFS 445",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -491,6 +515,7 @@
     "line": 27
    },
    "ref": "Syslog 514 UDP",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -512,6 +537,7 @@
     "line": 27
    },
    "ref": "RDP 3389",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -530,6 +556,7 @@
     "line": 27
    },
    "ref": "MS SQL / MySQL 1433 / 3306",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -551,6 +578,7 @@
     "line": 27
    },
    "ref": "1433 / 3306",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -569,6 +597,7 @@
     "line": 27
    },
    "ref": "PostgreSQL 5432",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -588,6 +617,7 @@
     "line": 27
    },
    "ref": "RADIUS (Auth / Accounting) 1812 / 1813",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -609,6 +639,7 @@
     "line": 27
    },
    "ref": "SIP / SIPS 5060 / 5061",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -630,6 +661,7 @@
     "line": 27
    },
    "ref": "IPsec IKE / NAT-T 500 / 4500",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -651,6 +683,7 @@
     "line": 27
    },
    "ref": "OpenVPN / WireGuard 1194 / 51820",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -672,6 +705,7 @@
     "line": 27
    },
    "ref": "1194 / 51820",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -690,6 +724,7 @@
     "line": 27
    },
    "ref": "MQTT / MQTT über TLS 1883 / 8883",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -711,6 +746,7 @@
     "line": 27
    },
    "ref": "Fett = unbedingt können",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "match",
    "pairs": [
@@ -727,8 +763,8 @@
      "right": "443"
     },
     {
-     "left": "SMB",
-     "right": "445"
+     "left": "HTTP",
+     "right": "80"
     },
     {
      "left": "RDP",
@@ -751,6 +787,7 @@
     "line": 27
    },
    "ref": "SMTP Submission (STARTTLS) 587",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "match",
    "pairs": [
@@ -784,13 +821,15 @@
    "id": "port-match-proto",
    "category": "ports",
    "prompt": "Ordne zu: Läuft der Dienst über TCP oder UDP?",
-   "explanation": "Dienste mit Sitzungen (SSH, RDP, SMB) nutzen TCP. Kurze Anfrage-Antwort-Dienste wie DHCP, NTP und SNMP nutzen UDP.",
+   "explanation": "Dienste mit Sitzungen (SSH, RDP, HTTPS) nutzen TCP. Kurze Anfrage-Antwort-Dienste wie DHCP, SNMP und normale DNS-Abfragen nutzen UDP.",
+   "pitfall": "DNS nutzt zusätzlich TCP bei Zonentransfers und großen Antworten.",
    "source": {
     "file": "lernzettel.md",
     "section": "Ports und Dienste",
     "line": 27
    },
-   "ref": "NTP 123 UDP",
+   "ref": "UDP (+ TCP bei Zonentransfer/großen Antworten)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "match",
    "pairs": [
@@ -803,7 +842,7 @@
      "right": "UDP"
     },
     {
-     "left": "NTP",
+     "left": "DNS (normale Abfrage)",
      "right": "UDP"
     },
     {
@@ -815,7 +854,7 @@
      "right": "UDP"
     },
     {
-     "left": "SMB",
+     "left": "HTTPS",
      "right": "TCP"
     }
    ]
@@ -831,6 +870,7 @@
     "line": 27
    },
    "ref": "49152–65535 = Dynamic/Private",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -852,6 +892,7 @@
     "line": 27
    },
    "ref": "0–1023 = Well-known Ports",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -874,6 +915,7 @@
     "line": 27
    },
    "ref": "beliebig zwischen 1024 und 65535",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "flashcard"
   },
@@ -888,6 +930,7 @@
     "line": 27
    },
    "ref": "SYN → SYN/ACK → ACK",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -909,6 +952,7 @@
     "line": 27
    },
    "ref": "UDP = verbindungslos, kein Handshake, schneller",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -931,6 +975,7 @@
     "line": 27
    },
    "ref": "ICMP hat keine Ports",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -953,6 +998,7 @@
     "line": 27
    },
    "ref": "Ping blockiert, Webseite geht trotzdem → Firewall sperrt ICMP",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "flashcard"
   },
@@ -968,6 +1014,7 @@
     "line": 67
    },
    "ref": "172.16.0.0 – 172.31.255.255",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -989,6 +1036,7 @@
     "line": 67
    },
    "ref": "172.16.0.0/12 255.240.0.0",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -1007,6 +1055,7 @@
     "line": 67
    },
    "ref": "Private Bereiche (RFC 1918)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "match",
    "pairs": [
@@ -1042,6 +1091,7 @@
     "line": 67
    },
    "ref": "Alles andere außerhalb dieser Bereiche gilt als öffentlich",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -1063,6 +1113,7 @@
     "line": 67
    },
    "ref": "werden im Internet nicht geroutet, brauchen NAT",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -1084,6 +1135,7 @@
     "line": 67
    },
    "ref": "169.254.0.0/16 APIPA / Link-local",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -1105,6 +1157,7 @@
     "line": 67
    },
    "ref": "100.64.0.0/10 Carrier-Grade-NAT",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -1126,6 +1179,7 @@
     "line": 67
    },
    "ref": "127.0.0.0/8 Loopback",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -1145,6 +1199,7 @@
     "line": 67
    },
    "ref": "224.0.0.0 – 239.255.255.255 Multicast",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -1166,6 +1221,7 @@
     "line": 67
    },
    "ref": "beginnt binär mit 1110",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -1184,6 +1240,7 @@
     "line": 67
    },
    "ref": "240.0.0.0/4 Reserviert, früher Klasse E",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -1205,6 +1262,7 @@
     "line": 67
    },
    "ref": "0.0.0.0/0 Default-Route",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -1226,6 +1284,7 @@
     "line": 67
    },
    "ref": "255.255.255.255 Limited Broadcast",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -1247,6 +1306,7 @@
     "line": 67
    },
    "ref": "Dokumentationsnetze",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -1268,6 +1328,7 @@
     "line": 67
    },
    "ref": "/26 255.255.255.192",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -1287,6 +1348,7 @@
     "line": 67
    },
    "ref": "/27 255.255.255.224",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -1306,6 +1368,7 @@
     "line": 67
    },
    "ref": "/27 255.255.255.224 32 30",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -1327,6 +1390,7 @@
     "line": 67
    },
    "ref": "/26 255.255.255.192 64 62",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -1348,6 +1412,7 @@
     "line": 67
    },
    "ref": "/22 255.255.252.0 1.024 1.022",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -1366,6 +1431,7 @@
     "line": 67
    },
    "ref": "/23 255.255.254.0",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -1384,6 +1450,7 @@
     "line": 67
    },
    "ref": "/20 255.255.240.0",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -1402,6 +1469,7 @@
     "line": 67
    },
    "ref": "/19 255.255.224.0 8.192 8.190",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -1420,6 +1488,7 @@
     "line": 67
    },
    "ref": "2 (Transfernetz zwischen Routern)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -1441,6 +1510,7 @@
     "line": 67
    },
    "ref": "einzelner Host (in Firewall-Regeln)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -1462,6 +1532,7 @@
     "line": 67
    },
    "ref": "weil Netz-ID und Broadcast wegfallen",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -1484,6 +1555,7 @@
     "line": 67
    },
    "ref": "128 – 192 – 224 – 240 – 248 – 252 – 254 – 255",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -1505,6 +1577,7 @@
     "line": 67
    },
    "ref": "/28 255.255.255.240 16 14",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "match",
    "pairs": [
@@ -1545,6 +1618,7 @@
     "line": 67
    },
    "ref": "Gateway in der Prüfung meist = letzte nutzbare (Broadcast − 1)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -1566,6 +1640,7 @@
     "line": 67
    },
    "ref": "VLSM: immer das größte Subnetz zuerst vergeben",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -1587,6 +1662,7 @@
     "line": 67
    },
    "ref": "8 Teile = +3 Bit",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -1608,6 +1684,7 @@
     "line": 67
    },
    "ref": "4 Teile = +2 Bit",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -1626,6 +1703,7 @@
     "line": 67
    },
    "ref": "längsten passenden Präfix (Longest Prefix Match)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -1647,6 +1725,7 @@
     "line": 122
    },
    "ref": "128 Bit, 8 Blöcke à 16 Bit (4 Hex-Ziffern)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -1669,6 +1748,7 @@
     "line": 122
    },
    "ref": "einmal :: für aufeinanderfolgende Null-Blöcke",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -1690,6 +1770,7 @@
     "line": 122
    },
    "ref": "führende Nullen pro Block weg",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -1708,6 +1789,7 @@
     "line": 122
    },
    "ref": "Standard-Subnetz /64",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -1726,6 +1808,7 @@
     "line": 122
    },
    "ref": "SLAAC braucht /64",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -1747,6 +1830,7 @@
     "line": 122
    },
    "ref": "2^16 = 65.536",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -1765,6 +1849,7 @@
     "line": 122
    },
    "ref": "2^8 = 256",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -1784,6 +1869,7 @@
     "line": 122
    },
    "ref": "2001:db8:1234::/64 bis 2001:db8:1234:ff::/64",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -1805,6 +1891,7 @@
     "line": 122
    },
    "ref": "Anzahl = 2^(neuer Präfix − alter Präfix)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -1827,6 +1914,7 @@
     "line": 122
    },
    "ref": "::, 4000::, 8000::, c000::",
+   "relevanz": "kern",
    "needsReview": true,
    "reviewNote": "Lernzettel Z. 143 spricht vom „4. Block“ – gemeint ist der 4. Hex-Block der Adresse. Bitte Formulierung prüfen.",
    "origin": "curated",
@@ -1850,6 +1938,7 @@
     "line": 122
    },
    "ref": "2^64 ≈ 1,84 × 10^19",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -1871,6 +1960,7 @@
     "line": 122
    },
    "ref": "Loopback ::1",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -1889,6 +1979,7 @@
     "line": 122
    },
    "ref": "fe80::/10",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -1910,6 +2001,7 @@
     "line": 122
    },
    "ref": "fc00::/7, in der Praxis fd00::/8",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -1931,6 +2023,7 @@
     "line": 122
    },
    "ref": "2000::/3 (beginnt mit 2 oder 3)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -1952,6 +2045,7 @@
     "line": 122
    },
    "ref": "ff00::/8 (IPv6 hat keinen Broadcast)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -1973,6 +2067,7 @@
     "line": 122
    },
    "ref": "Dokumentation 2001:db8::/32",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -1994,6 +2089,7 @@
     "line": 122
    },
    "ref": "NDP (Neighbor Discovery, über ICMPv6)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -2015,6 +2111,7 @@
     "line": 122
    },
    "ref": "TTL-Ersatz Hop Limit",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -2036,6 +2133,7 @@
     "line": 122
    },
    "ref": "Client bildet Link-local-Adresse selbst",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "flashcard"
   },
@@ -2050,6 +2148,7 @@
     "line": 122
    },
    "ref": "Gateway = Absender des Router Advertisements",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -2071,6 +2170,7 @@
     "line": 122
    },
    "ref": "Warum trotzdem DHCPv6",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -2093,6 +2193,7 @@
     "line": 149
    },
    "ref": "Bitte Denk Nicht Tag Für Tag An Pizza",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -2114,6 +2215,7 @@
     "line": 149
    },
    "ref": "Router, Layer-3-Switch",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -2132,6 +2234,7 @@
     "line": 149
    },
    "ref": "Paketfilter-Firewall",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "match",
    "pairs": [
@@ -2168,6 +2271,7 @@
     "line": 149
    },
    "ref": "4 Transport Segment",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "match",
    "pairs": [
@@ -2200,6 +2304,7 @@
     "line": 149
    },
    "ref": "TCP, UDP, Ports",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -2221,6 +2326,7 @@
     "line": 149
    },
    "ref": "Ethernet, MAC-Adresse, ARP, VLAN-Tag 802.1Q, STP",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -2242,6 +2348,7 @@
     "line": 149
    },
    "ref": "IPv4, IPv6, ICMP, IPsec, OSPF",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -2263,6 +2370,7 @@
     "line": 149
    },
    "ref": "TLS (oft hier eingeordnet)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -2284,6 +2392,7 @@
     "line": 149
    },
    "ref": "Netzzugang (1+2) – Internet (3) – Transport (4) – Anwendung (5–7)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "match",
    "pairs": [
@@ -2316,6 +2425,7 @@
     "line": 149
    },
    "ref": "fragt per Broadcast „Wer hat IP x?“ → bekommt MAC-Adresse",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -2337,6 +2447,7 @@
     "line": 149
    },
    "ref": "Ziel nicht im eigenen Netz → ARP nach der MAC des Gateways",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -2358,6 +2469,7 @@
     "line": 149
    },
    "ref": "Client fragt nach seiner eigenen IP, um Adresskonflikte zu erkennen",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -2380,6 +2492,7 @@
     "line": 149
    },
    "ref": "Discover (Broadcast) → Offer → Request → Acknowledge",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -2399,6 +2512,7 @@
     "line": 149
    },
    "ref": "Anderes VLAN → DHCP-Relay / IP-Helper nötig",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -2420,6 +2534,7 @@
     "line": 149
    },
    "ref": "A = IPv4, AAAA = IPv6, CNAME = Alias auf anderen Namen",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "match",
    "pairs": [
@@ -2460,6 +2575,7 @@
     "line": 149
    },
    "ref": "SOA = Zonenstart",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -2481,6 +2597,7 @@
     "line": 149
    },
    "ref": "NS = Nameserver",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -2502,6 +2619,7 @@
     "line": 149
    },
    "ref": "Client fragt rekursiv",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -2523,6 +2641,7 @@
     "line": 149
    },
    "ref": "wird von jedem Router um 1 verringert",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -2544,6 +2663,7 @@
     "line": 149
    },
    "ref": "Start: Windows 128, Linux 64",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "match",
    "pairs": [
@@ -2574,6 +2694,7 @@
     "line": 149
    },
    "ref": "1:1 / 1:Gruppe / 1:alle",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "match",
    "pairs": [
@@ -2602,6 +2723,7 @@
     "line": 149
    },
    "ref": "blockiert redundante Switch-Ports, um Schleifen zu vermeiden",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -2623,6 +2745,7 @@
     "line": 149
    },
    "ref": "mehrere physische Links bündeln",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -2644,6 +2767,7 @@
     "line": 149
    },
    "ref": "Kupfer max. 100 m",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -2663,6 +2787,7 @@
     "line": 149
    },
    "ref": "galvanische Trennung zwischen Gebäuden",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -2685,6 +2810,7 @@
     "line": 149
    },
    "ref": "Multimode ~ 300–550 m bei 10G",
+   "relevanz": "extra",
    "needsReview": true,
    "reviewNote": "Lernzettel gibt nur „~ 300–550 m bei 10G“ an (ungefähre Spanne, keine Fasertypen wie OM3/OM4).",
    "origin": "curated",
@@ -2701,6 +2827,7 @@
     "line": 149
    },
    "ref": "8 APs × 17,9 W = 143,2 W",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -2720,6 +2847,7 @@
     "line": 179
    },
    "ref": "1 KiB 1.024 Byte",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -2739,6 +2867,7 @@
     "line": 179
    },
    "ref": "1 GiB 1.024 MiB = 1.073.741.824 Byte",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -2758,6 +2887,7 @@
     "line": 179
    },
    "ref": "1 TiB 1.024 GiB",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -2780,6 +2910,7 @@
     "line": 179
    },
    "ref": "1 MB 1.000.000 Byte",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -2801,6 +2932,7 @@
     "line": 179
    },
    "ref": "Speicher in der Prüfung meist binär",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -2823,6 +2955,7 @@
     "line": 179
    },
    "ref": "1 Mbit/s = 1.000.000 bit/s",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -2844,6 +2977,7 @@
     "line": 179
    },
    "ref": "1 Byte = 8 Bit. Bit klein b, Byte groß B",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -2865,6 +2999,7 @@
     "line": 179
    },
    "ref": "10 Bit Zuwachs = Faktor 1.024 (2^10)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -2886,6 +3021,7 @@
     "line": 179
    },
    "ref": "2^16 = 65.536",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -2904,6 +3040,7 @@
     "line": 179
    },
    "ref": "2^32 ≈ 4,29 Mrd.",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -2926,6 +3063,7 @@
     "line": 179
    },
    "ref": "Übertragungszeit (mit Overhead)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -2948,6 +3086,7 @@
     "line": 179
    },
    "ref": "Kosten = Leistung in kW 24 365",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -2969,6 +3108,7 @@
     "line": 179
    },
    "ref": "Belegung 1024 + Zuwachs",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -2990,6 +3130,7 @@
     "line": 179
    },
    "ref": "99,9 % = 8,76 h",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -3009,6 +3150,7 @@
     "line": 179
    },
    "ref": "99 % = 87,6 h",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -3030,6 +3172,7 @@
     "line": 179
    },
    "ref": "99,99 % = 52,6 min",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -3052,6 +3195,7 @@
     "line": 179
    },
    "ref": "V_{gesamt} = 1 - (1 - V_1) \\cdot (1 - V_2)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -3073,6 +3217,7 @@
     "line": 179
    },
    "ref": "800.000 h / 16 = 50.000 h",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -3092,6 +3237,7 @@
     "line": 179
    },
    "ref": "60 min = 100 % → 3 min = 5 %",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -3111,6 +3257,7 @@
     "line": 179
    },
    "ref": "zählt doppelt (zwei Teilnehmer, Winter 2022)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -3132,6 +3279,7 @@
     "line": 179
    },
    "ref": "3.200 × 8 Byte (64 Bit) = 25,6 GB/s",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -3151,6 +3299,7 @@
     "line": 179
    },
    "ref": "CL16 = 16 Taktzyklen Latenz",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -3172,6 +3321,7 @@
     "line": 231
    },
    "ref": "Striping + doppelte Parität",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "match",
    "pairs": [
@@ -3212,6 +3362,7 @@
     "line": 231
    },
    "ref": "0 (keine Redundanz)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -3233,6 +3384,7 @@
     "line": 231
    },
    "ref": "einfache Parität 3 (n − 1) × C",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -3254,6 +3406,7 @@
     "line": 231
    },
    "ref": "doppelte Parität 4 (n − 2) × C 2 beliebige",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -3275,6 +3428,7 @@
     "line": 231
    },
    "ref": "Spiegel-Paare, gestript 4 n/2 × C",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -3296,6 +3450,7 @@
     "line": 231
    },
    "ref": "1 sicher, mehr nur wenn aus verschiedenen Spiegeln",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -3317,6 +3472,7 @@
     "line": 231
    },
    "ref": "Spiegelung 2 C (bzw. n/2 × C)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -3336,6 +3492,7 @@
     "line": 231
    },
    "ref": "(n − 1) × C",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -3355,6 +3512,7 @@
     "line": 231
    },
    "ref": "(n − 2) × C",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -3376,6 +3534,7 @@
     "line": 231
    },
    "ref": "Benötigte Nettokapazität ÷ Plattengröße, aufrunden",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "flashcard"
   },
@@ -3390,6 +3549,7 @@
     "line": 231
    },
    "ref": "20 TiB mit 4-TiB-Platten → 5 Datenplatten → RAID 5 = 6",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -3408,6 +3568,7 @@
     "line": 231
    },
    "ref": "RAID 6 = 7, RAID 10 = 10",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -3430,6 +3591,7 @@
     "line": 231
    },
    "ref": "aufrunden → Datenplatten",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -3451,6 +3613,7 @@
     "line": 231
    },
    "ref": "läuft im System mit, wird nicht genutzt",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -3472,6 +3635,7 @@
     "line": 231
    },
    "ref": "pro Platte nur die Kapazität der kleinsten",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -3493,6 +3657,7 @@
     "line": 231
    },
    "ref": "RAID ist kein Backup",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -3514,6 +3679,7 @@
     "line": 231
    },
    "ref": "JBOD Platten aneinandergehängt 1 Summe 0",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -3536,6 +3702,7 @@
     "line": 231
    },
    "ref": "mehrere RAID 5/6 gestript 6 / 8",
+   "relevanz": "extra",
    "needsReview": true,
    "reviewNote": "Im Lernzettel ist die Spalte „Darf ausfallen“ für RAID 50/60 leer – daher keine Frage dazu.",
    "origin": "curated",
@@ -3552,6 +3719,7 @@
     "line": 259
    },
    "ref": "Vollbackup alles zurückgesetzt (0)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -3573,6 +3741,7 @@
     "line": 259
    },
    "ref": "Differenziell alles mit Archivbit = 1 (seit letztem Voll) bleibt (1)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -3594,6 +3763,7 @@
     "line": 259
    },
    "ref": "Inkrementell alles mit Archivbit = 1 (seit letzter Sicherung) zurückgesetzt (0)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -3615,6 +3785,7 @@
     "line": 259
    },
    "ref": "Klon / Image 1:1-Abbild inkl. Dateisystem unverändert",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "match",
    "pairs": [
@@ -3648,6 +3819,7 @@
     "line": 259
    },
    "ref": "Voll + alle Inkrementellen danach",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -3669,6 +3841,7 @@
     "line": 259
    },
    "ref": "Voll + letzte Differenzielle",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -3690,6 +3863,7 @@
     "line": 259
    },
    "ref": "Das Archivbit wird vom Betriebssystem auf 1 gesetzt",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -3712,6 +3886,7 @@
     "line": 259
    },
    "ref": "Eine versehentliche inkrementelle Sicherung mitten in einer Reihe differenzieller Sicherungen setzt die Bits zurück",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "flashcard"
   },
@@ -3726,6 +3901,7 @@
     "line": 259
    },
    "ref": "3 Kopien der Daten (Original + 2)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -3747,6 +3923,7 @@
     "line": 259
    },
    "ref": "3-2-1-1-0 (eine Kopie offline/unveränderbar, 0 Fehler beim Restore-Test)",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -3769,6 +3946,7 @@
     "line": 259
    },
    "ref": "wie lange ein System ausfallen darf",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -3790,6 +3968,7 @@
     "line": 259
    },
    "ref": "bestimmt den Backup-Abstand",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -3811,6 +3990,7 @@
     "line": 259
    },
    "ref": "Archiv = Langzeitaufbewahrung, unveränderbar (WORM), revisionssicher",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -3832,6 +4012,7 @@
     "line": 259
    },
    "ref": "vollständig, unveränderbar, nachvollziehbar, zugriffsgeschützt",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -3853,6 +4034,7 @@
     "line": 259
    },
    "ref": "Rechnungen und Buchungsbelege 8 Jahre (seit 2025)",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "match",
    "pairs": [
@@ -3881,6 +4063,7 @@
     "line": 259
    },
    "ref": "Disk-to-Disk-to-Tape",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -3902,6 +4085,7 @@
     "line": 259
    },
    "ref": "kein vollwertiges Backup (liegt auf demselben System)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -3923,6 +4107,7 @@
     "line": 259
    },
    "ref": "gleiche Blöcke nur einmal speichern",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -3944,6 +4129,7 @@
     "line": 259
    },
    "ref": "verlustfrei: ZIP, verlustbehaftet: JPEG, MP3",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -3965,6 +4151,7 @@
     "line": 259
    },
    "ref": "LTFS macht das Band per Drag & Drop wie eine Festplatte nutzbar",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -3986,6 +4173,7 @@
     "line": 259
    },
    "ref": "groß für große Dateien wie Videos und Images",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -4007,6 +4195,7 @@
     "line": 285
    },
    "ref": "Schutzziele (CIA + A)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "match",
    "pairs": [
@@ -4039,6 +4228,7 @@
     "line": 285
    },
    "ref": "Daten wurden nicht unbemerkt verändert",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -4060,6 +4250,7 @@
     "line": 285
    },
    "ref": "Absender/Kommunikationspartner ist echt",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -4081,6 +4272,7 @@
     "line": 285
    },
    "ref": "DES (56 Bit) symmetrisch unsicher (Brute Force)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -4102,6 +4294,7 @@
     "line": 285
    },
    "ref": "AES-128 / AES-256 symmetrisch sicher, AES-256 empfohlen",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -4123,6 +4316,7 @@
     "line": 285
    },
    "ref": "3DES symmetrisch veraltet, unsicher",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -4144,6 +4338,7 @@
     "line": 285
    },
    "ref": "RSA (≥ 3.072 Bit empfohlen)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -4165,6 +4360,7 @@
     "line": 285
    },
    "ref": "Schlüsseltausch, Signatur, Zertifikate – nicht für große Datenmengen",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -4186,6 +4382,7 @@
     "line": 285
    },
    "ref": "ECDHE = Forward Secrecy",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -4207,6 +4404,7 @@
     "line": 285
    },
    "ref": "gemeinsamen Session-Key über unsicheren Kanal erzeugen",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -4229,6 +4427,7 @@
     "line": 285
    },
    "ref": "SHA-256 / SHA-3 Hash sicher",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -4250,6 +4449,7 @@
     "line": 285
    },
    "ref": "Kollisionen in Sekunden",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -4271,6 +4471,7 @@
     "line": 285
    },
    "ref": "Hash ist eine Einwegfunktion mit fester Länge, nicht umkehrbar",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -4292,6 +4493,7 @@
     "line": 285
    },
    "ref": "zwei verschiedene Eingaben mit gleichem Hash",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -4313,6 +4515,7 @@
     "line": 285
    },
    "ref": "asymmetrisch für Authentifizierung und Schlüsseltausch, danach schnell symmetrisch (AES)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -4335,6 +4538,7 @@
     "line": 285
    },
    "ref": "Signieren: mit dem eigenen privaten Schlüssel",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -4356,6 +4560,7 @@
     "line": 285
    },
    "ref": "Empfänger prüft mit dem öffentlichen Schlüssel des Absenders",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -4377,6 +4582,7 @@
     "line": 285
    },
    "ref": "Verschlüsseln: mit dem öffentlichen Schlüssel des Empfängers",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -4398,6 +4604,7 @@
     "line": 285
    },
    "ref": "CA neu aufbauen, alle Zertifikate neu ausstellen",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -4419,6 +4626,7 @@
     "line": 285
    },
    "ref": "X.509-Zertifikat enthält",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -4440,6 +4648,7 @@
     "line": 285
    },
    "ref": "SPF = DNS-TXT-Eintrag",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "match",
    "pairs": [
@@ -4470,6 +4679,7 @@
     "line": 285
    },
    "ref": "Wer kommt ins Gebäude/Raum?",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "match",
    "pairs": [
@@ -4515,6 +4725,7 @@
     "line": 285
    },
    "ref": "Weitergabekontrolle Schutz bei Übertragung/Transport",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "match",
    "pairs": [
@@ -4555,6 +4766,7 @@
     "line": 285
    },
    "ref": "Passwortregeln, Biometrie, 2FA, Bildschirmsperre",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -4576,6 +4788,7 @@
     "line": 285
    },
    "ref": "Wer darf welche Daten sehen/ändern?",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -4597,6 +4810,7 @@
     "line": 285
    },
    "ref": "innerhalb von 72 Stunden (Art. 33)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -4616,6 +4830,7 @@
     "line": 285
    },
    "ref": "Bei hohem Risiko für Betroffene → Betroffene unverzüglich informieren (Art. 34)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -4637,6 +4852,7 @@
     "line": 285
    },
    "ref": "(Art. 33)",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -4658,6 +4874,7 @@
     "line": 285
    },
    "ref": "Zweckbindung, Datenminimierung/-sparsamkeit, Speicherbegrenzung",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -4679,6 +4896,7 @@
     "line": 285
    },
    "ref": "mit Zuordnungstabelle umkehrbar, gilt weiter als personenbezogen",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -4701,6 +4919,7 @@
     "line": 285
    },
    "ref": "Formatieren reicht nicht",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -4722,6 +4941,7 @@
     "line": 285
    },
    "ref": "Virus = hängt sich an Programme, braucht Wirt",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "match",
    "pairs": [
@@ -4754,6 +4974,7 @@
     "line": 285
    },
    "ref": "never trust, always verify",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -4775,6 +4996,7 @@
     "line": 285
    },
    "ref": "Least Privilege (nur nötige Rechte)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -4796,6 +5018,7 @@
     "line": 285
    },
    "ref": "Härtung (unnötige Dienste aus, Standardpasswörter ändern",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -4817,6 +5040,7 @@
     "line": 348
    },
    "ref": "802.11n / ac / ax / be Wi-Fi 4 / 5 / 6",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "match",
    "pairs": [
@@ -4849,6 +5073,7 @@
     "line": 348
    },
    "ref": "nur 3 überlappungsfreie Kanäle (1, 6, 11)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -4868,6 +5093,7 @@
     "line": 348
    },
    "ref": "mehr Kanäle, höherer Durchsatz, geringere Reichweite",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -4889,6 +5115,7 @@
     "line": 348
    },
    "ref": "SSID / BSSID Name des WLANs / MAC-Adresse des Accesspoints",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -4910,6 +5137,7 @@
     "line": 348
    },
    "ref": "Hidden SSID SSID-Broadcast im Beacon abgeschaltet – kein echter Schutz",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -4931,6 +5159,7 @@
     "line": 348
    },
    "ref": "eigene Zugangsdaten/Zertifikat pro Nutzer, Prüfung über RADIUS mit EAP",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -4952,6 +5181,7 @@
     "line": 348
    },
    "ref": "SAE statt PSK-Handshake → Schutz gegen Offline-Wörterbuchangriffe",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -4973,6 +5203,7 @@
     "line": 348
    },
    "ref": "Authentication (wer bist du), Authorization (was darfst du), Accounting (was hast du genutzt)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "match",
    "pairs": [
@@ -5001,6 +5232,7 @@
     "line": 348
    },
    "ref": "zentrale Konfiguration und Überwachung vieler APs",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5022,6 +5254,7 @@
     "line": 348
    },
    "ref": "Gast-Login-Seite mit Ticket",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5043,6 +5276,7 @@
     "line": 348
    },
    "ref": "VLAN-Tag = 4 Byte",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -5062,6 +5296,7 @@
     "line": 348
    },
    "ref": "VLAN-ID = 12 Bit → IDs 1–4094",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5083,6 +5318,7 @@
     "line": 348
    },
    "ref": "AP mit mehreren SSIDs",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5104,6 +5340,7 @@
     "line": 348
    },
    "ref": "Untagged/Access-Port: Endgerät, genau ein VLAN",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5125,6 +5362,7 @@
     "line": 348
    },
    "ref": "nicht VLAN 1 lassen (VLAN-Hopping)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5146,6 +5384,7 @@
     "line": 348
    },
    "ref": "Dynamisch = Nutzer/MAC/802.1X bestimmt VLAN",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5167,6 +5406,7 @@
     "line": 348
    },
    "ref": "Zwischen VLANs braucht es Routing",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5188,6 +5428,7 @@
     "line": 348
    },
    "ref": "kleinere Broadcast-Domänen",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5209,6 +5450,7 @@
     "line": 348
    },
    "ref": "private Quell-IP + Quell-Port → öffentliche IP + neuer Port",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5230,6 +5472,7 @@
     "line": 348
    },
    "ref": "Destination-NAT / Port-Forwarding",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5251,6 +5494,7 @@
     "line": 348
    },
    "ref": "von außen nicht erreichbar",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5272,6 +5516,7 @@
     "line": 348
    },
    "ref": "prüft IP, Port, Protokoll jedes Pakets einzeln (Layer 3/4)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5293,6 +5538,7 @@
     "line": 348
    },
    "ref": "merkt sich Verbindungen in einer State-Tabelle",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5314,6 +5560,7 @@
     "line": 348
    },
    "ref": "Anwendungserkennung (Layer 7), IDS/IPS",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5335,6 +5582,7 @@
     "line": 348
    },
    "ref": "erste passende gewinnt, letzte Regel: alles verbieten",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5356,6 +5604,7 @@
     "line": 348
    },
    "ref": "eigenes Netz für Server, die von außen erreichbar sein müssen",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5377,6 +5626,7 @@
     "line": 348
    },
    "ref": "Offline / Standby VFD",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "match",
    "pairs": [
@@ -5405,6 +5655,7 @@
     "line": 348
    },
    "ref": "keine Umschaltzeit, teuer, schlechterer Wirkungsgrad",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5426,6 +5677,7 @@
     "line": 348
    },
    "ref": "Umschaltzeit ca. 2–10 ms",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5447,6 +5699,7 @@
     "line": 348
    },
    "ref": "gleicht Spannungsschwankungen aus, kurze Umschaltzeit",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5468,6 +5721,7 @@
     "line": 348
    },
    "ref": "virtuelle Server mieten",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "match",
    "pairs": [
@@ -5496,6 +5750,7 @@
     "line": 348
    },
    "ref": "IaaS Betriebssystem, Software, Daten",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5517,6 +5772,7 @@
     "line": 348
    },
    "ref": "PaaS eigene Anwendung + Daten",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5539,6 +5795,7 @@
     "line": 348
    },
    "ref": "Bereitstellung: Public, Private, Hybrid, Community Cloud",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5560,6 +5817,7 @@
     "line": 348
    },
    "ref": "Abhängigkeit vom Anbieter (Vendor Lock-in)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5581,6 +5839,7 @@
     "line": 348
    },
    "ref": "Internetanbindung als Single Point of Failure",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5602,6 +5861,7 @@
     "line": 348
    },
    "ref": "Pay-per-Use („Measured Service“)",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5623,6 +5883,7 @@
     "line": 348
    },
    "ref": "Hypervisor Typ 1 (bare metal)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5644,6 +5905,7 @@
     "line": 348
    },
    "ref": "VirtualBox, VMware Workstation, Parallels",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "match",
    "pairs": [
@@ -5688,6 +5950,7 @@
     "line": 348
    },
    "ref": "läuft als Programm auf einem Betriebssystem, für Test/Entwicklung",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5709,6 +5972,7 @@
     "line": 348
    },
    "ref": "teilen sich den Kernel des Host-Betriebssystems",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5730,6 +5994,7 @@
     "line": 348
    },
    "ref": "horizontal (scale out) = mehr Server",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "match",
    "pairs": [
@@ -5754,6 +6019,7 @@
     "line": 348
    },
    "ref": "zwei Umgebungen, neue Version auf der inaktiven installieren",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5775,6 +6041,7 @@
     "line": 348
    },
    "ref": "Device-CAL = pro Gerät (lohnt sich bei Schichtbetrieb/geteilten Geräten)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5796,6 +6063,7 @@
     "line": 348
    },
    "ref": "User-CAL = pro Nutzer",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5817,6 +6085,7 @@
     "line": 348
    },
    "ref": "Upgrade = neue Hauptversion, neue Funktionen, oft kostenpflichtig",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5842,6 +6111,7 @@
     "line": 417
    },
    "ref": "chmod 664 datei = rw-rw-r--",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -5860,6 +6130,7 @@
     "line": 417
    },
    "ref": "7 rwx 4 + 2 + 1",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "match",
    "pairs": [
@@ -5896,6 +6167,7 @@
     "line": 417
    },
    "ref": "Reihenfolge: Eigentümer – Gruppe – Andere",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5921,6 +6193,7 @@
     "line": 417
    },
    "ref": "- Datei, d Verzeichnis, l Link",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5942,6 +6215,7 @@
     "line": 417
    },
    "ref": "chown user:gruppe datei",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5967,6 +6241,7 @@
     "line": 417
    },
    "ref": "usermod -aG gruppe user",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -5993,6 +6268,7 @@
     "line": 417
    },
    "ref": "int / int = Ganzzahl, Rest fällt weg!",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -6015,6 +6291,7 @@
     "line": 417
    },
    "ref": "if (werte[i] > max) { max = werte[i]; }",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -6038,6 +6315,7 @@
     "line": 417
    },
    "ref": "if (werte[i] > 80) { anzahl++; }",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -6060,6 +6338,7 @@
     "line": 417
    },
    "ref": "Index 0 bis Length-1",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -6085,6 +6364,7 @@
     "line": 417
    },
    "ref": "Schleife startet bei 1 statt 0",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -6110,6 +6390,7 @@
     "line": 417
    },
    "ref": "Bedingung < 6 statt < Length",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -6131,6 +6412,7 @@
     "line": 417
    },
    "ref": "Summe vor der zweiten Schleife nicht auf 0 zurückgesetzt",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -6156,6 +6438,7 @@
     "line": 417
    },
    "ref": "Syntax = Grammatik verletzt (Semikolon fehlt, innt)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -6177,6 +6460,7 @@
     "line": 417
    },
    "ref": "Semantik = läuft, liefert aber falsches Ergebnis",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -6198,6 +6482,7 @@
     "line": 417
    },
    "ref": "Index außerhalb des Arrays, Division durch 0",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -6219,6 +6504,7 @@
     "line": 417
    },
    "ref": "−2.147.483.648 bis 2.147.483.647",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "input",
    "accepted": [
@@ -6237,6 +6523,7 @@
     "line": 417
    },
    "ref": "sbyte 8 −128 bis 127",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "match",
    "pairs": [
@@ -6269,6 +6556,7 @@
     "line": 417
    },
    "ref": "long 64 ca. ±9,2 × 10^18",
+   "relevanz": "extra",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -6292,6 +6580,7 @@
     "line": 417
    },
    "ref": "die IHK-Lösung nennt 34 Bit",
+   "relevanz": "kern",
    "needsReview": true,
    "reviewNote": "Lernzettel weist selbst auf den Widerspruch hin: IHK-Lösung 34 Bit, streng genommen 35 Bit.",
    "origin": "curated",
@@ -6308,6 +6597,7 @@
     "line": 417
    },
    "ref": "Klasse = Bauplan, Objekt = Instanz",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -6329,6 +6619,7 @@
     "line": 417
    },
    "ref": "Kapselung = Attribute private",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -6350,6 +6641,7 @@
     "line": 417
    },
    "ref": "Vererbung = abgeleitete Klasse übernimmt Attribute/Methoden der Basisklasse",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -6371,6 +6663,7 @@
     "line": 417
    },
    "ref": "statisch = Klassen-, Objekt-, Paket-, Komponentendiagramm",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "match",
    "pairs": [
@@ -6416,6 +6709,7 @@
     "line": 417
    },
    "ref": "Komposition (gefüllte Raute) = Teil stirbt mit dem Ganzen (Gebäude–Raum)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -6437,6 +6731,7 @@
     "line": 417
    },
    "ref": "Aggregation (leere Raute)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -6458,6 +6753,7 @@
     "line": 417
    },
    "ref": "WHERE filtert Zeilen, HAVING filtert Gruppen",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -6483,6 +6779,7 @@
     "line": 417
    },
    "ref": "HAVING COUNT(*) > 5",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -6508,6 +6805,7 @@
     "line": 417
    },
    "ref": "FOREIGN KEY (KundenNr) REFERENCES Kunde(KundenNr)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -6529,6 +6827,7 @@
     "line": 417
    },
    "ref": "PLZ = CHAR(5)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -6550,6 +6849,7 @@
     "line": 417
    },
    "ref": "IBAN DE = CHAR(22)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -6571,6 +6871,7 @@
     "line": 417
    },
    "ref": "Telefonnummer immer Text, nie INT (führende 0)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -6592,6 +6893,7 @@
     "line": 417
    },
    "ref": "variable Länge → VARCHAR(n)",
+   "relevanz": "kern",
    "origin": "curated",
    "type": "mc",
    "choices": [
@@ -6617,6 +6919,7 @@
     "line": 417
    },
    "ref": "/SC DAILY /ST 16:10",
+   "relevanz": "extra",
    "needsReview": true,
    "reviewNote": "Der Lernzettel zeigt nur den Befehl, erklärt die Parameter aber nicht – die Bedeutung von /SC, /ST, /TN, /TR ist ergänzt.",
    "origin": "curated",
@@ -6626,6 +6929,2303 @@
     "Die Aufgabe heißt DAILY",
     "Das Programm liegt im Ordner DAILY",
     "Die Aufgabe läuft nur einmal"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-usv-server",
+   "category": "infrastruktur",
+   "prompt": "Die Firma Maier GmbH richtet einen neuen Serverraum ein. Die Server sollen bei Netzstörungen ohne jede Unterbrechung weiterlaufen. Welcher USV-Typ ist geeignet?",
+   "explanation": "Bei der VFI-USV hängen die Verbraucher immer am Wechselrichter. Es gibt keine Umschaltzeit, und der Ausgang ist unabhängig von Spannung und Frequenz des Netzes.",
+   "mnemonic": "VFI = voll frei vom Netz (Independent).",
+   "pitfall": "VFD und VI schalten erst bei Ausfall auf Akku um und haben deshalb eine kurze Umschaltzeit.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "USV, Skalierung und Deployment",
+    "line": 11
+   },
+   "ref": "keine Umschaltzeit, Ausgang unabhängig von Spannung und Frequenz",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "VFI (Online-/Doppelwandler-USV)",
+    "VFD (Offline/Standby-USV)",
+    "VI (Line-Interactive-USV)",
+    "Jeder Typ, die Umschaltzeit ist bei Servern egal"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-usv-vfd-normal",
+   "category": "infrastruktur",
+   "prompt": "Für die Arbeitsplatz-PCs im Büro wird eine günstige Offline-USV (VFD) beschafft. Wie werden die PCs im Normalbetrieb versorgt?",
+   "explanation": "Bei der VFD-USV hängen die Verbraucher im Normalbetrieb direkt am Netz. Erst bei einem Stromausfall schaltet sie auf den Akku um, das dauert wenige Millisekunden.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "USV, Skalierung und Deployment",
+    "line": 11
+   },
+   "ref": "Im Normalbetrieb hängen die Verbraucher direkt am Stromnetz",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Direkt aus dem Stromnetz, erst bei Ausfall vom Akku",
+    "Ständig über den Wechselrichter",
+    "Ständig aus dem Akku",
+    "Über einen Spannungsregler, der auch die Frequenz stabilisiert"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-usv-vi",
+   "category": "infrastruktur",
+   "prompt": "In einer Werkhalle schwankt die Netzspannung häufig. Eine USV soll das ausgleichen, ohne dabei jedes Mal auf den Akku umzuschalten, und soll trotzdem günstig sein. Welcher Typ passt?",
+   "explanation": "Die Line-Interactive-USV (VI) regelt Über- und Unterspannung mit einem Spannungsregler aus, ohne auf Akku umzuschalten. Die Frequenz bleibt vom Netz abhängig.",
+   "pitfall": "VFI kann das auch, ist aber teurer. Gefragt war die günstige Lösung.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "USV, Skalierung und Deployment",
+    "line": 11
+   },
+   "ref": "regelt aber zusätzlich Über- und Unterspannung mit einem Spannungsregler aus",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "VI (Line-Interactive)",
+    "VFD (Offline/Standby)",
+    "VFI (Online/Doppelwandler)",
+    "Keine USV, sondern ein Überspannungsschutz"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-usv-match",
+   "category": "infrastruktur",
+   "prompt": "Ordne den USV-Typen ihre Eigenschaft zu.",
+   "explanation": "VFD = abhängig von Spannung und Frequenz, VI = unabhängig von der Spannung, VFI = unabhängig von Spannung und Frequenz.",
+   "mnemonic": "D = Dependent, VI = Voltage Independent, VFI = Voltage and Frequency Independent.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "USV, Skalierung und Deployment",
+    "line": 11
+   },
+   "ref": "Doppelwandler-USV",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "match",
+   "pairs": [
+    {
+     "left": "VFD",
+     "right": "Verbraucher im Normalbetrieb direkt am Netz"
+    },
+    {
+     "left": "VI",
+     "right": "Spannungsregler gleicht Schwankungen aus"
+    },
+    {
+     "left": "VFI",
+     "right": "Ständig über Gleich- und Wechselrichter, keine Umschaltzeit"
+    }
+   ]
+  },
+  {
+   "id": "erg-usv-laufzeit",
+   "category": "infrastruktur",
+   "prompt": "Die USV im Serverraum hält bei der aktuellen Last 40 Minuten durch. Es gibt einen Stromausfall von 10 Minuten. Wie viel Prozent der Akkuladung wurden verbraucht?",
+   "explanation": "Die Ladung sinkt bei gleicher Last linear: 10 min ÷ 40 min × 100 = 25 %.",
+   "pitfall": "Nicht mit 60 Minuten rechnen – maßgeblich ist die Laufzeit bei dieser Last.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "USV, Skalierung und Deployment",
+    "line": 11
+   },
+   "ref": "Verbrauchte Ladung in % = Ausfallminuten ÷ Laufzeit bei dieser Last × 100",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "input",
+   "accepted": [
+    "25"
+   ],
+   "compare": "number",
+   "unit": "%"
+  },
+  {
+   "id": "erg-scale-out",
+   "category": "infrastruktur",
+   "prompt": "Der Webshop der Sport GmbH ist im Weihnachtsgeschäft überlastet. Die Admins stellen zwei weitere Webserver hinter den Loadbalancer. Wie nennt man das?",
+   "explanation": "Weitere Server hinzufügen und die Last per Loadbalancer verteilen ist horizontale Skalierung. Sie braucht keinen Neustart und erhöht zusätzlich die Ausfallsicherheit.",
+   "mnemonic": "Horizontal = nebeneinander mehr Server.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "USV, Skalierung und Deployment",
+    "line": 11
+   },
+   "ref": "weitere Server hinzufügen, Last per Loadbalancer verteilen",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Horizontale Skalierung (scale out)",
+    "Vertikale Skalierung (scale up)",
+    "Blue-Green-Deployment",
+    "Load Shedding"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-scale-up-con",
+   "category": "infrastruktur",
+   "prompt": "Ein Datenbankserver wird vertikal skaliert (mehr RAM und CPU). Welcher Nachteil ist typisch?",
+   "explanation": "Vertikale Skalierung ist einfach, stößt aber an die Grenzen eines einzelnen Servers. Zum Einbau muss der Server meist heruntergefahren werden.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "USV, Skalierung und Deployment",
+    "line": 11
+   },
+   "ref": "begrenzt durch die Hardware und meist mit Ausfallzeit verbunden",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Begrenzt durch die Hardware und meist mit Ausfallzeit verbunden",
+    "Man braucht zwingend einen Loadbalancer",
+    "Die Daten müssen auf mehrere Server verteilt werden",
+    "Die Lizenzkosten sinken"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-bluegreen",
+   "category": "infrastruktur",
+   "prompt": "Ein Update der Webanwendung führt nach dem Umschalten per Blue-Green-Deployment zu Fehlern. Was ist der Vorteil dieses Verfahrens in dieser Situation?",
+   "explanation": "Die alte Version läuft noch auf der anderen Umgebung. Der Loadbalancer schaltet zurück – schneller Rollback mit kaum Ausfallzeit.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "USV, Skalierung und Deployment",
+    "line": 11
+   },
+   "ref": "Bei Fehlern schaltet man einfach zurück (schneller Rollback, kaum Ausfallzeit)",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Man schaltet einfach auf die alte Umgebung zurück",
+    "Das Update wird automatisch repariert",
+    "Die Datenbank wird automatisch zurückgesetzt",
+    "Es gibt keinen Vorteil, man muss neu installieren"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-mtbf-def",
+   "category": "einheiten",
+   "prompt": "Ein Datenblatt gibt für eine SSD eine MTBF von 1.500.000 h an. Was bedeutet MTBF?",
+   "explanation": "MTBF = Mean Time Between Failures, die mittlere Betriebszeit zwischen zwei Ausfällen. Es ist ein statistischer Mittelwert, keine Garantie für das einzelne Gerät.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "MTBF und Verfügbarkeit",
+    "line": 21
+   },
+   "ref": "mittlere Betriebszeit zwischen zwei Ausfällen",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Mittlere Betriebszeit zwischen zwei Ausfällen",
+    "Garantierte Lebensdauer jeder einzelnen SSD",
+    "Maximale Zeit bis zur Reparatur",
+    "Zeit, die ein Backup höchstens dauern darf"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-mtbf-verbund",
+   "category": "einheiten",
+   "prompt": "Ein Storage enthält 10 gleiche Platten mit je 1.000.000 h MTBF. Wie hoch ist die MTBF des Verbunds in Stunden?",
+   "explanation": "MTBF des Verbunds = MTBF ÷ Anzahl = 1.000.000 h ÷ 10 = 100.000 h.",
+   "pitfall": "Nicht multiplizieren: Mehr Platten bedeuten, dass früher irgendeine ausfällt.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "MTBF und Verfügbarkeit",
+    "line": 21
+   },
+   "ref": "MTBF ÷ n. Je mehr Platten, desto früher fällt statistisch irgendeine aus",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "input",
+   "accepted": [
+    "100000"
+   ],
+   "compare": "number",
+   "unit": "h"
+  },
+  {
+   "id": "erg-mtbf-jahre",
+   "category": "einheiten",
+   "prompt": "Wie rechnet man eine MTBF in Stunden in Jahre um?",
+   "explanation": "Ein Jahr hat 24 h × 365 Tage = 8.760 h. Beispiel: 50.000 h ÷ 8.760 ≈ 5,7 Jahre.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "MTBF und Verfügbarkeit",
+    "line": 21
+   },
+   "ref": "Stunden ÷ 8.760 (24 h × 365 Tage)",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Stunden ÷ 8.760",
+    "Stunden ÷ 365",
+    "Stunden ÷ 24",
+    "Stunden × 8.760"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-dedup-vm",
+   "category": "backup",
+   "prompt": "Die Firma sichert täglich 40 virtuelle Maschinen mit fast identischem Betriebssystem. Welches Verfahren spart hier am meisten Speicherplatz?",
+   "explanation": "Deduplizierung erkennt identische Datenblöcke und speichert sie nur einmal. Bei vielen ähnlichen VMs ist der Effekt besonders groß.",
+   "pitfall": "Verlustbehaftete Komprimierung ist für Backups ungeeignet.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "Backup-Speicher und Archivierung",
+    "line": 28
+   },
+   "ref": "Spart viel Platz bei vielen ähnlichen Daten (z. B. VM-Backups)",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Deduplizierung",
+    "Verlustbehaftete Komprimierung",
+    "Kleinere Clustergröße",
+    "RAID 1"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-dedup-vs-compress",
+   "category": "backup",
+   "prompt": "Erkläre den Unterschied zwischen Deduplizierung und Komprimierung.",
+   "answer": "Deduplizierung speichert identische Dateien oder Blöcke nur einmal und ersetzt Wiederholungen durch Verweise (dateiübergreifend). Komprimierung verkleinert die Daten innerhalb einer Datei durch geschickte Kodierung, verlustfrei (ZIP) oder verlustbehaftet (JPEG, MP3).",
+   "explanation": "Beide sparen Platz, wirken aber auf unterschiedlicher Ebene. Für Backups kommt nur verlustfreie Komprimierung in Frage.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "Backup-Speicher und Archivierung",
+    "line": 28
+   },
+   "ref": "verkleinert die Daten innerhalb einer Datei durch geschickte Kodierung",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "flashcard"
+  },
+  {
+   "id": "erg-cluster-small",
+   "category": "backup",
+   "prompt": "Auf einem Dateiserver-Volume liegen hunderttausende kleine Office-Dokumente. Welche Clustergröße wählt man?",
+   "explanation": "Jede Datei belegt mindestens einen ganzen Cluster. Bei vielen kleinen Dateien verschwenden große Cluster viel Platz.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "Backup-Speicher und Archivierung",
+    "line": 28
+   },
+   "ref": "wenig Verschnitt, gut für viele kleine Dateien",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Klein, damit wenig Verschnitt entsteht",
+    "Groß, damit weniger Verwaltungsaufwand entsteht",
+    "Die Clustergröße hat keinen Einfluss",
+    "So groß wie die größte Datei"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-worm",
+   "category": "backup",
+   "prompt": "Rechnungen sollen revisionssicher archiviert werden. Was zeichnet ein WORM-Medium aus?",
+   "explanation": "WORM = Write Once Read Many. Die Daten können nicht nachträglich verändert oder gelöscht werden – genau das verlangt revisionssichere Archivierung.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "Backup-Speicher und Archivierung",
+    "line": 28
+   },
+   "ref": "Daten können einmal geschrieben, danach nur noch gelesen, aber nicht verändert oder gelöscht werden",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Einmal schreiben, danach nur lesen – nicht änderbar oder löschbar",
+    "Beliebig oft beschreibbar, aber verschlüsselt",
+    "Nur lesbar, wenn ein Passwort eingegeben wird",
+    "Automatische Löschung nach Ablauf der Frist"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-revisionssicher",
+   "category": "backup",
+   "prompt": "Welche Anforderung gehört NICHT zur revisionssicheren Archivierung?",
+   "explanation": "Revisionssicher heißt: vollständig, unveränderbar, nachvollziehbar und zugriffsgeschützt über die gesamte Aufbewahrungsfrist.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "Backup-Speicher und Archivierung",
+    "line": 28
+   },
+   "ref": "Daten vollständig, unveränderbar, nachvollziehbar und zugriffsgeschützt",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Die Daten müssen jederzeit bearbeitet werden können",
+    "Die Daten müssen vollständig sein",
+    "Die Daten müssen unveränderbar sein",
+    "Die Daten müssen zugriffsgeschützt sein"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-lto-pro-con",
+   "category": "backup",
+   "prompt": "Der Geschäftsführer fragt, warum zusätzlich zum NAS auf LTO-Band gesichert wird. Welche Aussage ist richtig?",
+   "explanation": "LTO bietet hohe Kapazität, niedrige Kosten pro TB und kann offline gelagert werden (Schutz vor Ransomware). Wegen des sequenziellen Zugriffs dauert das Wiederherstellen einzelner Dateien länger.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "Backup-Speicher und Archivierung",
+    "line": 28
+   },
+   "ref": "Nachteil: sequenzieller Zugriff",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Bänder sind günstig pro TB und lassen sich offline lagern, die Wiederherstellung einzelner Dateien dauert aber länger",
+    "Bänder sind schneller als jede Festplatte beim Zugriff auf einzelne Dateien",
+    "Bänder müssen dauerhaft mit dem Netzwerk verbunden sein",
+    "Bänder sind teurer pro TB als SSDs"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-ltfs",
+   "category": "backup",
+   "prompt": "Was ermöglicht LTFS bei LTO-Bändern?",
+   "explanation": "LTFS = Linear Tape File System. Dateien lassen sich ohne spezielle Backup-Software lesen und schreiben. Der Zugriff bleibt aber sequenziell.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "Backup-Speicher und Archivierung",
+    "line": 28
+   },
+   "ref": "Das Band erscheint wie ein Laufwerk mit Dateisystem",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Das Band erscheint wie ein Laufwerk mit Dateisystem",
+    "Das Band kann wie eine SSD wahlfrei zugreifen",
+    "Das Band wird automatisch dedupliziert",
+    "Das Band wird in die Cloud gespiegelt"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-cal-user",
+   "category": "infrastruktur",
+   "prompt": "Im Vertrieb nutzt jeder der 20 Mitarbeiter einen PC, ein Notebook und ein Smartphone für den Zugriff auf den Server. Welche Lizenzart ist günstiger?",
+   "explanation": "Eine User-CAL gilt pro Benutzer, egal mit wie vielen Geräten er zugreift. Bei 3 Geräten pro Person braucht man nur 20 statt 60 Lizenzen.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "Lizenzen, Updates und Mobile Device Management",
+    "line": 39
+   },
+   "ref": "Lohnt sich, wenn ein Mitarbeiter mehrere Geräte nutzt",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "User-CAL (20 Lizenzen)",
+    "Device-CAL (60 Lizenzen)",
+    "Eine Server-Lizenz ohne CALs",
+    "Device-CAL nur für die Smartphones"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-patch-upgrade",
+   "category": "infrastruktur",
+   "prompt": "Ein Hersteller veröffentlicht eine Version 8.2.1, die eine Sicherheitslücke in 8.2.0 schließt. Worum handelt es sich?",
+   "explanation": "Ein Patch/Update behebt Fehler und Sicherheitslücken innerhalb derselben Hauptversion, meist kostenlos. Ein Upgrade wäre der Wechsel auf Version 9.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "Lizenzen, Updates und Mobile Device Management",
+    "line": 39
+   },
+   "ref": "behebt Fehler und Sicherheitslücken innerhalb derselben Hauptversion",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Um einen Patch/ein Update",
+    "Um ein Upgrade",
+    "Um eine neue Lizenz",
+    "Um ein Downgrade"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-mdm-wipe",
+   "category": "infrastruktur",
+   "prompt": "Ein Außendienstmitarbeiter hat sein Firmen-Smartphone im Zug verloren. Welche MDM-Funktion schützt die Firmendaten?",
+   "explanation": "Mit Remote Wipe wird das Gerät aus der Ferne gelöscht, die Daten fallen nicht in fremde Hände.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "Lizenzen, Updates und Mobile Device Management",
+    "line": 39
+   },
+   "ref": "Bei Verlust oder Diebstahl wird das Gerät aus der Ferne gelöscht",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Remote Wipe",
+    "Lockdown",
+    "App-Verteilung",
+    "Software-Inventarisierung"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-mdm-byod",
+   "category": "infrastruktur",
+   "prompt": "Mitarbeiter dürfen ihre privaten Smartphones dienstlich nutzen (BYOD). Wie trennt man dienstliche und private Daten?",
+   "explanation": "Im Container liegen dienstliche Apps und Daten getrennt und verschlüsselt. Die Firma kann nur den Container löschen, private Daten bleiben unberührt.",
+   "pitfall": "Ein Wipe des ganzen privaten Geräts würde auch private Fotos löschen.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "Lizenzen, Updates und Mobile Device Management",
+    "line": 39
+   },
+   "ref": "Die Firma kann nur diesen Container löschen, private Daten bleiben unberührt",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Mit einem verschlüsselten Container für dienstliche Apps und Daten",
+    "Mit einem Remote Wipe des ganzen Geräts beim Austritt",
+    "Durch ein Verbot privater Apps",
+    "Gar nicht, das ist bei BYOD nicht möglich"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-mdm-lockdown",
+   "category": "infrastruktur",
+   "prompt": "Tablets im Lager sollen nur die Lager-App ausführen können. Welche MDM-Funktion nutzt man?",
+   "explanation": "Beim Lockdown wird das Gerät auf bestimmte Apps und Funktionen beschränkt.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "Lizenzen, Updates und Mobile Device Management",
+    "line": 39
+   },
+   "ref": "Das Gerät wird auf bestimmte Apps und Funktionen beschränkt",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Lockdown (Kiosk-Modus)",
+    "Remote Wipe",
+    "Container",
+    "Geofencing"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-phishing-merkmale",
+   "category": "sicherheit",
+   "prompt": "Eine Mitarbeiterin erhält eine Mail „Ihr Konto wird in 24 Stunden gesperrt – bitte hier anmelden“. Welches Merkmal spricht am deutlichsten für Phishing?",
+   "explanation": "Typisch für Phishing sind Zeitdruck oder Drohung, die Aufforderung Zugangsdaten einzugeben, abweichende Absender-Domains und Links, deren Ziel nicht zum Text passt.",
+   "pitfall": "Ein echtes Logo beweist nichts – Logos lassen sich einfach kopieren.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "E-Mail-Sicherheit: Phishing, Spam, SPF, DKIM",
+    "line": 50
+   },
+   "ref": "Zeitdruck oder Drohung, Aufforderung Zugangsdaten einzugeben",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Zeitdruck und Aufforderung, Zugangsdaten einzugeben",
+    "Die Mail enthält ein Firmenlogo",
+    "Die Mail kam während der Arbeitszeit",
+    "Die Mail ist in HTML formatiert"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-phishing-merkmale-card",
+   "category": "sicherheit",
+   "prompt": "Nenne vier Merkmale einer Phishing-Mail.",
+   "answer": "Abweichende Absenderadresse/Domain, Zeitdruck oder Drohung, Aufforderung Zugangsdaten einzugeben, Linkziel passt nicht zum angezeigten Text, unpersönliche Anrede, unerwarteter Anhang.",
+   "explanation": "In der Prüfung werden meist 3–4 Merkmale verlangt, oft an einer abgebildeten Mail.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "E-Mail-Sicherheit: Phishing, Spam, SPF, DKIM",
+    "line": 50
+   },
+   "ref": "Linkziel passt nicht zum angezeigten Text, unpersönliche Anrede, unerwarteter Anhang",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "flashcard"
+  },
+  {
+   "id": "erg-spam-phishing",
+   "category": "sicherheit",
+   "prompt": "Was unterscheidet Phishing von Spam?",
+   "explanation": "Spam ist lästig, aber nicht unbedingt ein Angriff. Phishing ist eine gefälschte Mail mit dem Ziel Betrug oder Schadsoftware.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "E-Mail-Sicherheit: Phishing, Spam, SPF, DKIM",
+    "line": 50
+   },
+   "ref": "unerwünschte Massen-E-Mail, meist Werbung",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Phishing will gezielt an Zugangsdaten oder auf Schadsoftware locken, Spam ist unerwünschte Massenwerbung",
+    "Spam ist immer gefährlicher als Phishing",
+    "Phishing kommt nur per SMS, Spam per E-Mail",
+    "Es gibt keinen Unterschied"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-spf",
+   "category": "sicherheit",
+   "prompt": "Der Mailserver eines Kunden lehnt Mails der Firma ab: „SPF fail“. Was prüft SPF?",
+   "explanation": "SPF ist ein TXT-Eintrag im DNS der Absenderdomain mit den erlaubten Mailservern. Der Empfänger prüft, ob der einliefernde Server dazugehört. Hier fehlt vermutlich der neue Mailserver im SPF-Eintrag.",
+   "pitfall": "Die Signatur prüft DKIM, nicht SPF.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "E-Mail-Sicherheit: Phishing, Spam, SPF, DKIM",
+    "line": 50
+   },
+   "ref": "Er listet die Mailserver, die für diese Domain senden dürfen",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Ob der einliefernde Mailserver für die Absenderdomain senden darf",
+    "Ob die Mail eine gültige Signatur hat",
+    "Ob die Mail verschlüsselt übertragen wurde",
+    "Ob der Empfänger existiert"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-dkim",
+   "category": "sicherheit",
+   "prompt": "Wo steht der öffentliche Schlüssel, mit dem ein Empfänger die DKIM-Signatur prüft?",
+   "explanation": "Der sendende Server signiert die Mail, die Signatur steht im Mail-Header. Den öffentlichen Schlüssel holt sich der Empfänger aus dem DNS der Absenderdomain.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "E-Mail-Sicherheit: Phishing, Spam, SPF, DKIM",
+    "line": 50
+   },
+   "ref": "Der öffentliche Schlüssel steht als TXT-Eintrag im DNS der Absenderdomain",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Als TXT-Eintrag im DNS der Absenderdomain",
+    "Im Body der E-Mail",
+    "Im Zertifikat des Empfängers",
+    "In der Firewall des Empfängers"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-dkim-what",
+   "category": "sicherheit",
+   "prompt": "Was stellt eine gültige DKIM-Signatur sicher?",
+   "explanation": "DKIM sichert Herkunft (Domain) und Integrität. Es verschlüsselt nichts und prüft keine Inhalte auf Viren.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "E-Mail-Sicherheit: Phishing, Spam, SPF, DKIM",
+    "line": 50
+   },
+   "ref": "dass die Mail von der Domain stammt und unterwegs nicht verändert wurde",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Die Mail stammt von der Domain und wurde unterwegs nicht verändert",
+    "Die Mail wurde Ende-zu-Ende verschlüsselt",
+    "Der Inhalt ist frei von Schadsoftware",
+    "Der Absender ist eine bestimmte Person"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-haertung",
+   "category": "sicherheit",
+   "prompt": "Ein neuer Linux-Webserver soll gehärtet werden. Welche Maßnahme gehört dazu?",
+   "explanation": "Härtung verkleinert die Angriffsfläche: nicht benötigte Dienste, Ports und Software entfernen, Standardpasswörter ändern, Updates einspielen, nicht benötigte Konten deaktivieren.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "Härtung, Least Privilege, Zero Trust, Datenschutz",
+    "line": 58
+   },
+   "ref": "nicht benötigte Dienste, Ports und Software entfernen, Standardpasswörter ändern",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Nicht benötigte Dienste und Software entfernen",
+    "Alle Ports öffnen, damit nichts blockiert wird",
+    "Das Standardpasswort behalten, damit der Support es kennt",
+    "Automatische Updates abschalten"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-least-priv",
+   "category": "sicherheit",
+   "prompt": "Ein Backup-Dienst läuft bisher mit Domänen-Admin-Rechten. Nach welchem Prinzip sollte man das ändern?",
+   "explanation": "Least Privilege: Jeder Benutzer und jeder Dienst bekommt nur die Rechte, die er für seine Aufgabe wirklich braucht. Wird der Dienst kompromittiert, ist der Schaden kleiner.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "Härtung, Least Privilege, Zero Trust, Datenschutz",
+    "line": 58
+   },
+   "ref": "Jeder Benutzer und jeder Dienst bekommt nur die Rechte, die er für seine Aufgabe wirklich braucht",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Least Privilege",
+    "Zero Trust",
+    "Need to Share",
+    "Defense in Depth"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-zerotrust",
+   "category": "sicherheit",
+   "prompt": "Die Firma führt Zero Trust ein. Was ändert sich für einen PC im internen LAN?",
+   "explanation": "Zero Trust: „Never trust, always verify“. Kein Gerät und kein Benutzer gilt automatisch als vertrauenswürdig, auch nicht im internen Netz.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "Härtung, Least Privilege, Zero Trust, Datenschutz",
+    "line": 58
+   },
+   "ref": "auch nicht im internen Netz. Jeder Zugriff wird einzeln geprüft",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Auch er gilt nicht automatisch als vertrauenswürdig, jeder Zugriff wird geprüft",
+    "Nichts, interne Geräte sind vertrauenswürdig",
+    "Er bekommt automatisch Admin-Rechte",
+    "Er darf nur noch ins Internet"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-pseudo",
+   "category": "sicherheit",
+   "prompt": "Für eine Auswertung werden Kundennamen durch Kundennummern ersetzt. Die Zuordnungstabelle liegt getrennt bei der Buchhaltung. Was ist das, und gilt die DSGVO weiter?",
+   "explanation": "Mit der Zuordnungstabelle lässt sich die Person wieder ermitteln, also Pseudonymisierung. Die Daten bleiben personenbezogen.",
+   "pitfall": "Nur bei echter Anonymisierung (Personenbezug unwiderruflich entfernt) gilt die DSGVO nicht mehr.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "Härtung, Least Privilege, Zero Trust, Datenschutz",
+    "line": 58
+   },
+   "ref": "Die Daten bleiben personenbezogen, die DSGVO gilt weiter",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Pseudonymisierung – die DSGVO gilt weiter",
+    "Anonymisierung – die DSGVO gilt nicht mehr",
+    "Pseudonymisierung – die DSGVO gilt nicht mehr",
+    "Verschlüsselung – die DSGVO gilt nicht mehr"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-anonym",
+   "category": "sicherheit",
+   "prompt": "Wann fallen Daten nicht mehr unter die DSGVO?",
+   "explanation": "Bei Anonymisierung lässt sich die Person nicht mehr ermitteln. Pseudonymisierte und verschlüsselte Daten bleiben personenbezogen.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "Härtung, Least Privilege, Zero Trust, Datenschutz",
+    "line": 58
+   },
+   "ref": "Der Personenbezug wird unwiderruflich entfernt",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Wenn sie anonymisiert sind, also der Personenbezug unwiderruflich entfernt ist",
+    "Wenn sie pseudonymisiert sind",
+    "Wenn sie verschlüsselt gespeichert sind",
+    "Wenn sie älter als ein Jahr sind"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-uml-static",
+   "category": "programmierung",
+   "prompt": "Welches UML-Diagramm ist ein statisches Diagramm (Struktur)?",
+   "explanation": "Statisch: Klassen-, Objekt-, Komponenten-, Verteilungs- und Paketdiagramm. Dynamisch: Anwendungsfall-, Aktivitäts-, Sequenz- und Zustandsdiagramm.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "UML und OOP",
+    "line": 66
+   },
+   "ref": "Klassendiagramm, Objektdiagramm, Komponentendiagramm, Verteilungsdiagramm, Paketdiagramm",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Klassendiagramm",
+    "Sequenzdiagramm",
+    "Aktivitätsdiagramm",
+    "Zustandsdiagramm"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-uml-dynamic",
+   "category": "programmierung",
+   "prompt": "Ordne die UML-Diagramme zu.",
+   "explanation": "Statische Diagramme zeigen die Struktur, dynamische das Verhalten über die Zeit.",
+   "pitfall": "Das Anwendungsfalldiagramm zählt zu den Verhaltensdiagrammen.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "UML und OOP",
+    "line": 66
+   },
+   "ref": "Anwendungsfalldiagramm, Aktivitätsdiagramm, Sequenzdiagramm, Zustandsdiagramm",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "match",
+   "pairs": [
+    {
+     "left": "Verteilungsdiagramm",
+     "right": "statisch"
+    },
+    {
+     "left": "Anwendungsfalldiagramm",
+     "right": "dynamisch"
+    },
+    {
+     "left": "Objektdiagramm",
+     "right": "statisch"
+    },
+    {
+     "left": "Sequenzdiagramm",
+     "right": "dynamisch"
+    },
+    {
+     "left": "Komponentendiagramm",
+     "right": "statisch"
+    },
+    {
+     "left": "Zustandsdiagramm",
+     "right": "dynamisch"
+    }
+   ]
+  },
+  {
+   "id": "erg-uml-aggregation",
+   "category": "programmierung",
+   "prompt": "Ein Team hat mehrere Spieler. Ein Spieler kann auch ohne Team existieren. Welche Beziehung modelliert man?",
+   "explanation": "Aggregation = „hat ein“, das Teil kann ohne das Ganze existieren. Die leere Raute sitzt am Ganzen (Team).",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "UML und OOP",
+    "line": 66
+   },
+   "ref": "Das Teil kann auch ohne das Ganze existieren (Team und Spieler)",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Aggregation (leere Raute am Team)",
+    "Komposition (gefüllte Raute am Team)",
+    "Vererbung",
+    "Abhängigkeit"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-uml-composition",
+   "category": "programmierung",
+   "prompt": "Wird eine Rechnung gelöscht, werden auch ihre Rechnungspositionen gelöscht. Wie wird diese Beziehung in UML dargestellt?",
+   "explanation": "Komposition: Das Teil existiert nur mit dem Ganzen und wird mit ihm gelöscht. Gefüllte Raute am Ganzen.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "UML und OOP",
+    "line": 66
+   },
+   "ref": "Das Teil existiert nur mit dem Ganzen und wird mit ihm gelöscht",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Gefüllte Raute an der Rechnung (Komposition)",
+    "Leere Raute an der Rechnung (Aggregation)",
+    "Pfeil mit leerem Dreieck zur Rechnung",
+    "Gestrichelte Linie"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-oop-kapselung",
+   "category": "programmierung",
+   "prompt": "In der Klasse Konto ist das Attribut kontostand private, Änderungen gehen nur über die Methode einzahlen(). Welches Prinzip ist das, und was bringt es?",
+   "explanation": "Kapselung: Attribute sind private, der Zugriff erfolgt nur über öffentliche Methoden. So kann einzahlen() z. B. negative Beträge ablehnen.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "UML und OOP",
+    "line": 66
+   },
+   "ref": "So kann die Klasse ungültige Werte abfangen",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Kapselung – die Klasse kann ungültige Werte abfangen",
+    "Vererbung – Unterklassen übernehmen das Attribut",
+    "Polymorphie – die Methode verhält sich je nach Objekt anders",
+    "Komposition – das Konto besteht aus Buchungen"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-oop-vererbung",
+   "category": "programmierung",
+   "prompt": "Die Klassen Notebook und Desktop erben von der Klasse Computer. Wie stellt man das im UML-Klassendiagramm dar?",
+   "explanation": "Vererbung: Die Unterklasse übernimmt Attribute und Methoden der Oberklasse. Der Pfeil mit leerer Dreiecksspitze zeigt auf die Oberklasse.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "UML und OOP",
+    "line": 66
+   },
+   "ref": "Pfeil mit leerer Dreiecksspitze zeigt auf die Oberklasse",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Pfeil mit leerer Dreiecksspitze von Notebook/Desktop zu Computer",
+    "Gefüllte Raute an Computer",
+    "Leere Raute an Notebook",
+    "Gestrichelter Pfeil von Computer zu Notebook"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-sql-pk",
+   "category": "programmierung",
+   "prompt": "Was gilt für einen Primärschlüssel (PRIMARY KEY)?",
+   "explanation": "Der Primärschlüssel identifiziert jede Zeile eindeutig, darf nicht NULL sein und nicht doppelt vorkommen.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "SQL: Tabellen anlegen und Datentypen",
+    "line": 75
+   },
+   "ref": "identifiziert jede Zeile eindeutig, darf nicht NULL sein und nicht doppelt vorkommen",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Eindeutig pro Zeile und nie NULL",
+    "Darf doppelt vorkommen, aber nicht NULL sein",
+    "Verweist auf eine andere Tabelle",
+    "Muss immer vom Typ VARCHAR sein"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-sql-fk",
+   "category": "programmierung",
+   "prompt": "Ein Entwickler versucht, eine Bestellung mit KundenNr 999 einzufügen, die es in der Tabelle Kunde nicht gibt. Die Datenbank lehnt ab. Welche Zeile ist dafür verantwortlich?",
+   "code": {
+    "lang": "sql",
+    "src": "CREATE TABLE Bestellung (\n  BestellNr INT PRIMARY KEY,\n  KundenNr  INT NOT NULL,\n  Datum     DATE,\n  FOREIGN KEY (KundenNr) REFERENCES Kunde(KundenNr)\n);"
+   },
+   "explanation": "Der Fremdschlüssel verweist auf den Primärschlüssel der Tabelle Kunde. Die Datenbank verhindert Verweise auf nicht vorhandene Datensätze (referenzielle Integrität).",
+   "pitfall": "NOT NULL verhindert nur leere Werte, nicht falsche.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "SQL: Tabellen anlegen und Datentypen",
+    "line": 75
+   },
+   "ref": "referenzielle Integrität",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "FOREIGN KEY (KundenNr) REFERENCES Kunde(KundenNr)",
+    "BestellNr INT PRIMARY KEY",
+    "KundenNr INT NOT NULL",
+    "Datum DATE"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-sql-create",
+   "category": "programmierung",
+   "prompt": "Ergänze die Lücke, damit KundenNr der Primärschlüssel wird: CREATE TABLE Kunde ( KundenNr INT ____ , Name VARCHAR(50) NOT NULL );",
+   "explanation": "Mit PRIMARY KEY hinter der Spalte wird sie zum Primärschlüssel.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "SQL: Tabellen anlegen und Datentypen",
+    "line": 75
+   },
+   "ref": "KundenNr INT PRIMARY KEY",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "input",
+   "accepted": [
+    "PRIMARY KEY"
+   ],
+   "compare": "text"
+  },
+  {
+   "id": "erg-sql-types-match",
+   "category": "programmierung",
+   "prompt": "Ordne den Spalten den passenden Datentyp zu.",
+   "explanation": "Feste Länge → CHAR, variable Länge → VARCHAR. PLZ und Telefonnummer sind Text, weil führende Nullen erhalten bleiben müssen und nicht gerechnet wird.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "SQL: Tabellen anlegen und Datentypen",
+    "line": 75
+   },
+   "ref": "PLZ mit 5 Stellen, deutsche IBAN mit 22 Zeichen",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "match",
+   "pairs": [
+    {
+     "left": "PLZ (Deutschland)",
+     "right": "CHAR(5)"
+    },
+    {
+     "left": "IBAN (Deutschland)",
+     "right": "CHAR(22)"
+    },
+    {
+     "left": "Telefonnummer",
+     "right": "VARCHAR(20)"
+    },
+    {
+     "left": "Kundennummer",
+     "right": "INT"
+    }
+   ]
+  },
+  {
+   "id": "erg-sql-plz-int",
+   "category": "programmierung",
+   "prompt": "Ein Azubi legt die Spalte PLZ als INT an. Welches Problem tritt auf?",
+   "explanation": "Bei Zahlen gehen führende Nullen verloren. Mit PLZ wird außerdem nicht gerechnet, deshalb CHAR(5).",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "SQL: Tabellen anlegen und Datentypen",
+    "line": 75
+   },
+   "ref": "Führende Nullen gingen verloren (01067 Dresden)",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Die PLZ 01067 wird als 1067 gespeichert",
+    "INT kann keine fünfstelligen Zahlen speichern",
+    "Man kann nicht nach der PLZ sortieren",
+    "Es tritt kein Problem auf"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-cs-syntax-vs-semantik",
+   "category": "programmierung",
+   "prompt": "Ordne die Fehler der Fehlerart zu.",
+   "explanation": "Syntaxfehler meldet der Compiler. Semantische Fehler liefern falsche Ergebnisse. Exceptions treten erst bei der Ausführung auf.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "Programmieren: Fehlerarten, Exceptions, Pseudocode",
+    "line": 100
+   },
+   "ref": "Der Compiler meldet ihn, das Programm lässt sich nicht übersetzen",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "match",
+   "pairs": [
+    {
+     "left": "Fehlendes Semikolon",
+     "right": "Syntaxfehler"
+    },
+    {
+     "left": "< statt <= in der Schleifenbedingung",
+     "right": "Semantischer Fehler"
+    },
+    {
+     "left": "Zugriff auf werte[10] bei 10 Elementen",
+     "right": "Laufzeitfehler (Exception)"
+    },
+    {
+     "left": "Ganzzahlige Division durch 0",
+     "right": "Laufzeitfehler (Exception)"
+    }
+   ]
+  },
+  {
+   "id": "erg-cs-index-ex",
+   "category": "programmierung",
+   "prompt": "Welche Exception löst dieser Code in C# aus?",
+   "code": {
+    "lang": "csharp",
+    "src": "int[] werte = new int[5];\nfor (int i = 0; i <= werte.Length; i++)\n{\n    werte[i] = i * 2;\n}"
+   },
+   "explanation": "Bei i = 5 wird auf werte[5] zugegriffen, gültig sind nur 0 bis 4. Richtig wäre i < werte.Length.",
+   "pitfall": "<= statt < in der Schleife ist ein Klassiker in der Prüfung.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "Programmieren: Fehlerarten, Exceptions, Pseudocode",
+    "line": 100
+   },
+   "ref": "IndexOutOfRangeException in C#",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "IndexOutOfRangeException",
+    "DivideByZeroException",
+    "NullReferenceException",
+    "Keine, der Code läuft fehlerfrei"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-cs-div0",
+   "category": "programmierung",
+   "prompt": "Eine Methode berechnet den Mittelwert mit summe / anzahl (beide int). Was passiert, wenn das Array leer ist?",
+   "explanation": "Bei einem leeren Array ist anzahl = 0. Ganzzahlige Division durch 0 löst eine DivideByZeroException aus. Abhilfe: vorher prüfen oder try-catch.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "Programmieren: Fehlerarten, Exceptions, Pseudocode",
+    "line": 100
+   },
+   "ref": "ganzzahlige Division durch 0 (DivideByZeroException)",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Es tritt eine DivideByZeroException auf",
+    "Das Ergebnis ist 0",
+    "Der Compiler meldet einen Syntaxfehler",
+    "Es wird eine IndexOutOfRangeException ausgelöst"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-pseudocode",
+   "category": "programmierung",
+   "prompt": "Die Ausbilderin möchte den Algorithmus zuerst als Pseudocode sehen. Welcher Vorteil von Pseudocode ist richtig?",
+   "explanation": "Pseudocode konzentriert sich auf die Logik statt auf Syntax und lässt sich später in jede Sprache umsetzen.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "Programmieren: Fehlerarten, Exceptions, Pseudocode",
+    "line": 100
+   },
+   "ref": "unabhängig von einer Programmiersprache, auch für Nicht-Programmierer lesbar",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Er ist unabhängig von einer Programmiersprache und auch für Nicht-Programmierer lesbar",
+    "Er kann direkt vom Compiler übersetzt werden",
+    "Er ist schneller in der Ausführung",
+    "Er enthält automatisch die Fehlerbehandlung"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-schreibtischtest",
+   "category": "programmierung",
+   "prompt": "Was ist ein Schreibtischtest?",
+   "explanation": "Beim Schreibtischtest spielt man das Programm von Hand durch. In der Prüfung trägt man die Werte in eine vorgegebene Tabelle ein.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "Programmieren: Fehlerarten, Exceptions, Pseudocode",
+    "line": 100
+   },
+   "ref": "die Werte der Variablen werden nach jedem Schritt in einer Tabelle notiert",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Das Programm wird von Hand Schritt für Schritt durchgegangen und die Variablenwerte werden in einer Tabelle notiert",
+    "Ein automatischer Test mit Testframework",
+    "Ein Test der Hardware am Arbeitsplatz",
+    "Ein Lasttest mit vielen Benutzern"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-cs-byte",
+   "category": "programmierung",
+   "prompt": "Ein Zähler in einem C#-Programm soll Werte von 0 bis 200 speichern. Welcher 8-Bit-Datentyp ist geeignet?",
+   "explanation": "byte hat 8 Bit und deckt 0 bis 255 ab. sbyte reicht nur bis 127, short hat 16 Bit, bool speichert nur true/false.",
+   "pitfall": "sbyte ist vorzeichenbehaftet und endet schon bei 127.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "Programmieren: Fehlerarten, Exceptions, Pseudocode",
+    "line": 100
+   },
+   "ref": "byte (8 Bit) 0 bis 255, sbyte −128 bis 127",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "byte",
+    "sbyte",
+    "bool",
+    "short"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-tls-order",
+   "category": "sicherheit",
+   "prompt": "Bringe die Schritte des TLS-Handshakes (TLS 1.2, vereinfacht) in die richtige Reihenfolge (Buchstaben mit Komma): A) Client prüft das Zertifikat, B) Server Hello mit Zertifikat, C) Schlüsselaustausch (ECDHE), D) Client Hello, E) Finished, danach symmetrische Verschlüsselung",
+   "explanation": "Client Hello → Server Hello mit Zertifikat → Zertifikatsprüfung → Schlüsselaustausch → Finished. Danach werden die Daten symmetrisch (z. B. AES) verschlüsselt.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "TLS, Diffie-Hellman und Zertifikate",
+    "line": 109
+   },
+   "ref": "Client Hello: Client schickt unterstützte TLS-Versionen, Cipher Suites und eine Zufallszahl",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "input",
+   "accepted": [
+    "D,B,A,C,E"
+   ],
+   "compare": "list",
+   "placeholder": "z. B. A,B,C,D,E"
+  },
+  {
+   "id": "erg-tls-hello",
+   "category": "sicherheit",
+   "prompt": "Was schickt der Server im Server Hello an den Client?",
+   "explanation": "Der Server wählt aus den Angeboten des Clients Version und Cipher Suite und schickt sein Zertifikat mit öffentlichem Schlüssel.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "TLS, Diffie-Hellman und Zertifikate",
+    "line": 109
+   },
+   "ref": "Server wählt Version und Cipher Suite und schickt sein Zertifikat",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Gewählte TLS-Version und Cipher Suite sowie sein Zertifikat",
+    "Seinen privaten Schlüssel",
+    "Die Liste aller unterstützten Browser",
+    "Den fertigen Sitzungsschlüssel im Klartext"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-hybrid",
+   "category": "sicherheit",
+   "prompt": "Warum nutzt TLS für die eigentlichen Daten ein symmetrisches Verfahren?",
+   "explanation": "Hybride Verschlüsselung: asymmetrisch für Authentifizierung und Schlüsselaustausch, symmetrisch für die Daten wegen der Geschwindigkeit.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "TLS, Diffie-Hellman und Zertifikate",
+    "line": 109
+   },
+   "ref": "symmetrisch für die eigentlichen Daten, weil symmetrische Verfahren viel schneller sind",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Weil symmetrische Verfahren viel schneller sind",
+    "Weil asymmetrische Verfahren unsicher sind",
+    "Weil symmetrische Verfahren keinen Schlüssel brauchen",
+    "Weil Browser keine asymmetrischen Verfahren können"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-dh-mitm",
+   "category": "sicherheit",
+   "prompt": "Warum reicht Diffie-Hellman allein nicht für eine sichere Verbindung?",
+   "explanation": "Bei Diffie-Hellman wird der Schlüssel nie übertragen, sondern auf beiden Seiten berechnet. Wer der Partner ist, prüft DH aber nicht – dafür braucht man Zertifikate.",
+   "pitfall": "Der Schlüssel selbst wird bei DH gerade NICHT übertragen.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "TLS, Diffie-Hellman und Zertifikate",
+    "line": 109
+   },
+   "ref": "Diffie-Hellman allein authentifiziert nicht",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Es authentifiziert die Gegenseite nicht – ein Man-in-the-Middle ist möglich",
+    "Der Schlüssel wird im Klartext übertragen",
+    "Es funktioniert nur mit RSA-Schlüsseln",
+    "Es ist zu langsam für das Internet"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-tls13",
+   "category": "sicherheit",
+   "prompt": "Die Firma stellt den Webserver von TLS 1.2 auf TLS 1.3 um. Welcher Vorteil ist richtig?",
+   "explanation": "TLS 1.3 hat einen Handshake mit einem Roundtrip, erlaubt nur Schlüsselaustausch mit Forward Secrecy (ECDHE/DHE) und hat RSA-Schlüsseltausch und RC4 entfernt.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "TLS, Diffie-Hellman und Zertifikate",
+    "line": 109
+   },
+   "ref": "schnellerer Handshake mit nur einem Roundtrip",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Schnellerer Handshake mit nur einem Roundtrip und nur noch Forward Secrecy",
+    "TLS 1.3 braucht keine Zertifikate mehr",
+    "TLS 1.3 nutzt wieder RC4 für mehr Geschwindigkeit",
+    "TLS 1.3 verschlüsselt nur noch die Anmeldedaten"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-x509-content",
+   "category": "sicherheit",
+   "prompt": "Nenne fünf Inhalte eines X.509-Zertifikats.",
+   "answer": "Version, Seriennummer, Signaturalgorithmus, Aussteller (CA), Gültigkeitszeitraum, Inhaber (Subject), öffentlicher Schlüssel des Inhabers, Erweiterungen (z. B. alternative Namen), Signatur der CA.",
+   "explanation": "Der private Schlüssel ist nie im Zertifikat enthalten.",
+   "pitfall": "„Privater Schlüssel“ ist die klassische falsche Antwort.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "TLS, Diffie-Hellman und Zertifikate",
+    "line": 109
+   },
+   "ref": "Gültigkeitszeitraum, Inhaber (Subject), öffentlicher Schlüssel des Inhabers",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "flashcard"
+  },
+  {
+   "id": "erg-ca-leak",
+   "category": "sicherheit",
+   "prompt": "Ein Admin hat versehentlich den privaten Schlüssel der internen CA per Mail verschickt. Was ist zu tun?",
+   "answer": "CA-Zertifikat widerrufen und aus allen Vertrauensspeichern entfernen, neue CA mit neuem Schlüsselpaar erstellen, alle Zertifikate neu ausstellen und verteilen.",
+   "explanation": "Mit dem privaten Schlüssel der CA kann jeder gültige Zertifikate fälschen. Alles, was diese CA unterschrieben hat, ist nicht mehr vertrauenswürdig.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "TLS, Diffie-Hellman und Zertifikate",
+    "line": 109
+   },
+   "ref": "Mit ihm kann jeder gültige Zertifikate fälschen",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "flashcard"
+  },
+  {
+   "id": "erg-ocsp",
+   "category": "sicherheit",
+   "prompt": "Wie prüft ein Client, ob ein Zertifikat widerrufen wurde?",
+   "explanation": "Widerrufene Zertifikate stehen in der Sperrliste der CA (CRL) oder werden online per OCSP abgefragt.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "TLS, Diffie-Hellman und Zertifikate",
+    "line": 109
+   },
+   "ref": "über Sperrlisten (CRL) oder online per OCSP",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Über eine Sperrliste (CRL) oder online per OCSP",
+    "Über den Gültigkeitszeitraum allein",
+    "Durch einen Ping auf den Server",
+    "Über den MX-Eintrag der Domain"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-nslookup-alias",
+   "category": "osi",
+   "prompt": "Was sagt die Zeile „Aliases: www.beispiel.de“ in dieser Ausgabe aus?",
+   "code": {
+    "lang": "text",
+    "src": "C:> nslookup www.beispiel.de\nServer:  dc01.firma.local\nAddress:  192.168.10.5\n\nNicht autorisierende Antwort:\nName:    web01.beispiel.de\nAddress:  203.0.113.20\nAliases:  www.beispiel.de"
+   },
+   "explanation": "Aliases bedeutet: Der gefragte Name ist ein Alias, es gibt also einen CNAME-Eintrag, der auf den Namen unter Name zeigt.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "DNS und nslookup",
+    "line": 126
+   },
+   "ref": "Der gefragte Name ist ein Alias, es gibt also einen CNAME-Eintrag",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "www.beispiel.de ist ein CNAME, der auf web01.beispiel.de zeigt",
+    "www.beispiel.de ist ein zweiter A-Eintrag mit derselben IP",
+    "www.beispiel.de ist der Mailserver der Domain",
+    "Der DNS-Server dc01 heißt auch www.beispiel.de"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-nslookup-server",
+   "category": "osi",
+   "prompt": "Ein Client gibt nslookup www.beispiel.de ein. Oben steht „Server: dc01.firma.local, Address: 192.168.10.5“. Was bedeuten diese Zeilen?",
+   "explanation": "Die ersten Zeilen zeigen immer den DNS-Server, an den der Client die Anfrage geschickt hat – hier den internen Domain Controller.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "DNS und nslookup",
+    "line": 126
+   },
+   "ref": "der DNS-Server, den der Client gefragt hat",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Das ist der DNS-Server, den der Client gefragt hat",
+    "Das ist der Webserver von www.beispiel.de",
+    "Das ist das Standard-Gateway",
+    "Das ist der zuständige Nameserver der Zone beispiel.de"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-nslookup-nonauth",
+   "category": "osi",
+   "prompt": "Was bedeutet „Nicht autorisierende Antwort“ in der Ausgabe von nslookup?",
+   "explanation": "Die Antwort stammt nicht direkt vom autoritativen Nameserver, sondern z. B. aus dem Cache. Sie ist trotzdem in der Regel korrekt.",
+   "pitfall": "Nicht autorisierend heißt nicht „falsch“ oder „verboten“.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "DNS und nslookup",
+    "line": 126
+   },
+   "ref": "Die Antwort kommt nicht vom zuständigen Nameserver der Zone",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Die Antwort kommt nicht vom zuständigen Nameserver der Zone, z. B. aus dem Cache des Resolvers",
+    "Der Client hat keine Berechtigung für die Anfrage",
+    "Die Antwort ist falsch",
+    "Der Eintrag existiert nicht"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-dns-mx",
+   "category": "osi",
+   "prompt": "Eine Domain hat zwei MX-Einträge: Priorität 10 für mail1 und Priorität 20 für mail2. Welcher Server wird bevorzugt?",
+   "explanation": "Beim MX-Eintrag gilt: kleinere Zahl = bevorzugt. mail2 wird nur genutzt, wenn mail1 nicht erreichbar ist.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "DNS und nslookup",
+    "line": 126
+   },
+   "ref": "Mailserver der Domain mit Priorität (kleinere Zahl = bevorzugt)",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "mail1 (Priorität 10)",
+    "mail2 (Priorität 20)",
+    "Beide abwechselnd",
+    "Der zuerst eingetragene"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-dns-cname-wrong",
+   "category": "osi",
+   "prompt": "Nach einem Serverumzug landen alle Benutzer bei intranet.firma.local auf dem alten Server. Der A-Eintrag des neuen Servers ist korrekt. Was ist die wahrscheinliche Ursache?",
+   "explanation": "Zeigt ein Alias auf den falschen Zielnamen, landen alle Clients auf dem falschen Server, obwohl der A-Eintrag des richtigen Servers stimmt.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "DNS und nslookup",
+    "line": 126
+   },
+   "ref": "Zeigt ein Alias auf den falschen Zielnamen, landen alle Clients auf dem falschen Server",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Der CNAME intranet zeigt noch auf den Namen des alten Servers",
+    "Der MX-Eintrag ist falsch",
+    "Der PTR-Eintrag fehlt",
+    "Der neue Server hat kein Gateway"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-dns-iterativ",
+   "category": "osi",
+   "prompt": "Der interne Resolver fragt nacheinander Root-Server, den .de-Server und den Nameserver von beispiel.de. Wie heißt diese Art der Anfrage?",
+   "explanation": "Bei der iterativen Anfrage verweist jeder Server auf den nächsten. Der Client selbst stellt dagegen eine rekursive Anfrage an seinen Resolver und erwartet eine fertige Antwort.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "DNS und nslookup",
+    "line": 126
+   },
+   "ref": "Der Resolver fragt nacheinander Root-Server, TLD-Server und den zuständigen Nameserver",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Iterativ",
+    "Rekursiv",
+    "Autoritativ",
+    "Reverse Lookup"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-snmp-trap",
+   "category": "osi",
+   "prompt": "Das Monitoring soll sofort erfahren, wenn am Core-Switch ein Netzteil ausfällt, nicht erst bei der nächsten Abfrage. Was nutzt man?",
+   "explanation": "Beim Trap meldet der Agent ein Ereignis unaufgefordert an den Manager. Bei get fragt der Manager regelmäßig ab (Polling).",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "SNMP",
+    "line": 149
+   },
+   "ref": "Der Agent meldet ein Ereignis unaufgefordert an den Manager, UDP 162",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "SNMP Trap (Agent meldet unaufgefordert, UDP 162)",
+    "SNMP get (Manager fragt ab, UDP 161)",
+    "Syslog über TCP 514",
+    "ICMP Echo Request"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-snmp-get",
+   "category": "osi",
+   "prompt": "Der Monitoring-Server liest alle 5 Minuten die Auslastung der Switchports aus. Welche SNMP-Operation ist das?",
+   "explanation": "Beim get fragt der Manager aktiv einen Wert beim Agenten ab.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "SNMP",
+    "line": 149
+   },
+   "ref": "Der Manager (Monitoring-Server) fragt einen Wert beim Agenten aktiv ab (Polling), UDP 161",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "get (Polling, UDP 161)",
+    "Trap (UDP 162)",
+    "set",
+    "Inform an den Agenten"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-snmpv3",
+   "category": "osi",
+   "prompt": "Warum sollte man SNMPv3 statt SNMPv2c einsetzen?",
+   "explanation": "Bei SNMPv1/v2c kann jeder Mitleser den Community-String sehen. SNMPv3 sichert die Kommunikation ab.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "SNMP",
+    "line": 149
+   },
+   "ref": "SNMPv1/v2c übertragen den Community-String im Klartext",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "SNMPv3 bietet Authentifizierung und Verschlüsselung, v2c überträgt den Community-String im Klartext",
+    "SNMPv3 ist schneller",
+    "SNMPv3 braucht keinen Agenten",
+    "SNMPv2c funktioniert nicht mehr mit UDP"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-wlan-bssid",
+   "category": "netzwerk",
+   "prompt": "Ein WLAN-Scan im Lager zeigt dreimal die SSID „Firma-Lager“, jeweils mit unterschiedlicher BSSID. Was bedeutet das?",
+   "explanation": "Die BSSID ist die MAC-Adresse der Funkschnittstelle eines Accesspoints. Mehrere APs mit derselben SSID haben unterschiedliche BSSIDs.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "WLAN-Planung, PoE und Gast-WLAN",
+    "line": 155
+   },
+   "ref": "Mehrere APs mit derselben SSID haben unterschiedliche BSSIDs",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Drei verschiedene Accesspoints strahlen dasselbe WLAN aus",
+    "Drei verschiedene WLANs mit gleichem Passwort",
+    "Ein Fehler des Scanners",
+    "Ein Angreifer hat zwei falsche APs aufgestellt"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-wlan-kanal",
+   "category": "netzwerk",
+   "prompt": "Drei benachbarte Accesspoints funken im 2,4-GHz-Band auf den Kanälen 1, 3 und 6. Die Nutzer klagen über langsames WLAN. Was empfiehlt man?",
+   "explanation": "Im 2,4-GHz-Band sind die Kanäle 20 MHz breit, liegen aber nur 5 MHz auseinander. Kanal 3 überlappt mit 1 und 6 – die APs stören sich.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "WLAN-Planung, PoE und Gast-WLAN",
+    "line": 155
+   },
+   "ref": "Nur 1, 6 und 11 überlappen sich nicht",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Kanäle 1, 6 und 11 verwenden, da nur diese sich nicht überlappen",
+    "Alle APs auf Kanal 1 stellen",
+    "Die Sendeleistung aller APs maximieren",
+    "Die SSID verstecken"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-wlan-dbm",
+   "category": "netzwerk",
+   "prompt": "Welcher Messwert zeigt beim WLAN-Scan das stärkste Signal?",
+   "explanation": "dBm-Werte sind negativ. Je näher an 0, desto stärker das Signal.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "WLAN-Planung, PoE und Gast-WLAN",
+    "line": 155
+   },
+   "ref": "−50 dBm ist besser als −80 dBm (näher an 0 = stärker)",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "−48 dBm",
+    "−67 dBm",
+    "−75 dBm",
+    "−82 dBm"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-wlan-hidden",
+   "category": "netzwerk",
+   "prompt": "Der Chef möchte das Firmen-WLAN „unsichtbar“ machen, indem die SSID versteckt wird. Wie bewertest du das?",
+   "explanation": "Die SSID wird nicht in den Beacons gesendet, taucht aber in den Anfragen der Clients auf. Schutz bietet nur starke Verschlüsselung (WPA2/WPA3).",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "WLAN-Planung, PoE und Gast-WLAN",
+    "line": 155
+   },
+   "ref": "Der Name wird nicht in den Beacons gesendet, taucht aber in den Anfragen der Clients auf",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Kein Sicherheitsgewinn, die SSID ist in den Anfragen der Clients mit jedem Scanner sichtbar",
+    "Sehr sicher, ohne SSID kann sich niemand verbinden",
+    "Ersetzt die Verschlüsselung mit WPA2",
+    "Verhindert Man-in-the-Middle-Angriffe"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-poe-standard",
+   "category": "netzwerk",
+   "prompt": "Ein neuer Accesspoint braucht 25 W. Welcher PoE-Standard muss der Switchport mindestens unterstützen?",
+   "explanation": "802.3af liefert bis 15,4 W pro Port – zu wenig. 802.3at (PoE+) liefert bis 30 W.",
+   "pitfall": "802.3ad ist Link Aggregation, 802.1Q ist VLAN-Tagging.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "WLAN-Planung, PoE und Gast-WLAN",
+    "line": 155
+   },
+   "ref": "802.3at (PoE+) bis 30 W pro Port",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "802.3at (PoE+), bis 30 W",
+    "802.3af (PoE), bis 15,4 W",
+    "802.3ad",
+    "802.1Q"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-poe-budget",
+   "category": "netzwerk",
+   "prompt": "An einem Switch mit 370 W PoE-Budget hängen 12 Accesspoints mit je 13 W und 6 Kameras mit je 25,5 W. Wie viel Watt PoE-Budget bleiben übrig?",
+   "explanation": "12 × 13 W = 156 W, 6 × 25,5 W = 153 W, zusammen 309 W. 370 W − 309 W = 61 W Reserve.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "WLAN-Planung, PoE und Gast-WLAN",
+    "line": 155
+   },
+   "ref": "Summe der Leistung aller PoE-Geräte ≤ PoE-Budget des Switches",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "input",
+   "accepted": [
+    "61"
+   ],
+   "compare": "number",
+   "unit": "W"
+  },
+  {
+   "id": "erg-guest-wlan",
+   "category": "netzwerk",
+   "prompt": "Besucher eines Hotels sollen ins Internet, aber nicht ins interne Netz. Die Zugänge sollen zeitlich begrenzt sein. Was richtet man ein?",
+   "explanation": "Das Gast-WLAN hat eine eigene SSID im eigenen VLAN, nur Internetzugang und Client-Isolation. Über das Captive Portal gibt man zeitlich begrenzte Voucher-Codes ein und bestätigt die Nutzungsbedingungen.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "WLAN-Planung, PoE und Gast-WLAN",
+    "line": 155
+   },
+   "ref": "Zugang über ein Captive Portal mit Vouchern (zeitlich begrenzte Zugangscodes)",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Gast-WLAN in eigenem VLAN mit Captive Portal und Vouchern",
+    "Das Firmen-WLAN mit einem einfachen Passwort",
+    "WPA2-Enterprise mit Domänenkonto für jeden Gast",
+    "Ein WLAN mit versteckter SSID"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-vlan-native",
+   "category": "netzwerk",
+   "prompt": "Was ist das Native VLAN eines Trunks?",
+   "explanation": "Frames des Native VLANs laufen untagged über den Trunk. Es muss auf beiden Seiten gleich eingestellt sein, sonst landen Frames im falschen VLAN.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "VLAN in der Praxis",
+    "line": 166
+   },
+   "ref": "das VLAN, dessen Frames auf einem Trunk ohne Tag übertragen werden",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Das VLAN, dessen Frames auf dem Trunk ohne Tag übertragen werden",
+    "Das VLAN mit der höchsten Priorität",
+    "Immer das Management-VLAN",
+    "Das VLAN, das nur Broadcasts überträgt"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-vlan-dynamic",
+   "category": "netzwerk",
+   "prompt": "Mitarbeiter sollen an jeder Netzwerkdose automatisch in ihrem Abteilungs-VLAN landen. Wie setzt man das um?",
+   "explanation": "Bei dynamischen VLANs wird das VLAN anhand des Geräts oder Benutzers zugewiesen. Mit 802.1X teilt der RADIUS-Server das VLAN nach der Anmeldung mit.",
+   "pitfall": "Portbasierte VLANs sind fest an den Port gebunden – zieht jemand um, muss der Admin umkonfigurieren.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "VLAN in der Praxis",
+    "line": 166
+   },
+   "ref": "nach Anmeldung per 802.1X teilt der RADIUS-Server das VLAN mit",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Dynamische VLANs: Anmeldung per 802.1X, der RADIUS-Server teilt das VLAN mit",
+    "Portbasierte VLANs an jedem Switchport",
+    "Alle Ports als Trunk konfigurieren",
+    "Ein großes VLAN für alle"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-router-stick",
+   "category": "netzwerk",
+   "prompt": "Ein Router hat nur ein freies Interface, soll aber zwischen VLAN 10 und VLAN 20 routen. Wie geht das?",
+   "explanation": "Das physische Interface wird als Trunk angeschlossen. Jedes Subinterface bekommt eine eigene IP-Adresse, die das Gateway des jeweiligen VLANs ist.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "VLAN in der Praxis",
+    "line": 166
+   },
+   "ref": "Für jedes VLAN gibt es ein Subinterface (z. B. eth0.10, eth0.20)",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Router-on-a-Stick: Trunk zum Switch, je VLAN ein Subinterface (eth0.10, eth0.20) als Gateway",
+    "Gar nicht, man braucht pro VLAN ein physisches Interface",
+    "Das Interface als Access-Port in VLAN 10 und VLAN 20 gleichzeitig",
+    "Mit einem DHCP-Relay"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-dhcp-relay",
+   "category": "netzwerk",
+   "prompt": "Nach der Einführung von VLANs bekommen die Clients in VLAN 30 keine IP-Adresse mehr. Der DHCP-Server steht in VLAN 10. Was fehlt?",
+   "explanation": "DHCP-Anfragen sind Broadcasts und gelangen nicht über den Router. Der Router leitet sie als DHCP-Relay als Unicast an den DHCP-Server weiter.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "VLAN in der Praxis",
+    "line": 166
+   },
+   "ref": "DHCP-Anfragen sind Broadcasts und gelangen nicht über den Router",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Ein DHCP-Relay auf dem Router, der die Anfragen als Unicast weiterleitet",
+    "Ein zweiter DNS-Server",
+    "Ein Trunk zum Client",
+    "Eine statische ARP-Tabelle"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-voice-vlan",
+   "category": "netzwerk",
+   "prompt": "Am Switchport hängt ein IP-Telefon, an dessen PC-Anschluss ein Arbeitsplatz-PC. Wie wird der Verkehr getrennt?",
+   "explanation": "IP-Telefone liegen im eigenen Voice-VLAN, damit Sprache priorisiert werden kann (QoS). Der PC-Verkehr läuft untagged im Daten-VLAN.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "VLAN in der Praxis",
+    "line": 166
+   },
+   "ref": "läuft sein Verkehr untagged im Daten-VLAN, der des Telefons tagged im Voice-VLAN",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Telefon tagged im Voice-VLAN, PC untagged im Daten-VLAN",
+    "Beide untagged im Daten-VLAN",
+    "PC tagged im Voice-VLAN, Telefon untagged",
+    "Telefon und PC brauchen getrennte Switchports, sonst geht es nicht"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-stp",
+   "category": "osi",
+   "prompt": "Zwei Switches werden zur Ausfallsicherheit doppelt verbunden. Kurz darauf bricht das Netz durch einen Broadcast-Sturm zusammen. Was fehlt?",
+   "explanation": "STP verhindert Schleifen, indem es redundante Ports blockiert. Fällt eine Verbindung aus, wird der blockierte Port aktiviert.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "Switching und Verkabelung",
+    "line": 175
+   },
+   "ref": "Ohne STP entsteht bei einer Schleife ein Broadcast-Sturm",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Spanning Tree (STP)",
+    "Ein DHCP-Relay",
+    "Ein Voice-VLAN",
+    "PoE"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-lacp",
+   "category": "osi",
+   "prompt": "Zwischen Server und Switch sollen zwei Leitungen gleichzeitig genutzt werden, um die Bandbreite zu verdoppeln. Was richtet man ein?",
+   "explanation": "Link Aggregation bündelt mehrere physische Verbindungen zu einer logischen. Mehr Bandbreite und Ausfallsicherheit, STP blockiert die Einzelleitungen nicht.",
+   "pitfall": "STP würde bei zwei einfachen Verbindungen eine davon blockieren.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "Switching und Verkabelung",
+    "line": 175
+   },
+   "ref": "mehrere physische Verbindungen zwischen zwei Geräten werden zu einer logischen gebündelt",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Link Aggregation",
+    "Spanning Tree",
+    "Ein zweites VLAN",
+    "Port Mirroring"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-lwl-gebaeude",
+   "category": "osi",
+   "prompt": "Zwei Gebäude in 250 m Abstand sollen vernetzt werden. Warum Glasfaser statt Kupfer?",
+   "explanation": "Twisted Pair darf maximal 100 m lang sein. Glasfaser schafft größere Entfernungen, ist unempfindlich gegen elektromagnetische Störungen und verhindert Probleme durch Potenzialunterschiede.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "Switching und Verkabelung",
+    "line": 175
+   },
+   "ref": "keine elektrische Verbindung zwischen Gebäuden",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Kupfer ist auf 100 m begrenzt, Glasfaser ist zudem unempfindlich gegen Störungen und trennt die Gebäude elektrisch",
+    "Glasfaser ist billiger als Kupfer",
+    "Kupfer kann kein Gigabit übertragen",
+    "Glasfaser braucht keine Switches"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-sfp",
+   "category": "osi",
+   "prompt": "Nach dem Einbau neuer SFP-Module kommt zwischen zwei Switches kein Link zustande. Was prüfst du zuerst?",
+   "explanation": "Kein Link ist ein Problem auf Schicht 1. Typische Ursachen: unpassende Module oder Fasern, vertauschte Fasern, verschmutzte Stecker, nicht unterstützte Module.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "Switching und Verkabelung",
+    "line": 175
+   },
+   "ref": "Sind Sende- und Empfangsfaser vertauscht?",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Ob beide Module zusammenpassen (Multimode/Singlemode, Wellenlänge, Geschwindigkeit) und Sende-/Empfangsfaser nicht vertauscht sind",
+    "Ob der DHCP-Server läuft",
+    "Ob die VLAN-ID unter 4095 liegt",
+    "Ob die DNS-Einträge stimmen"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-dsl-business",
+   "category": "netzwerk",
+   "prompt": "Die Firma will einen eigenen Mailserver betreiben und braucht schnelle Hilfe bei Störungen. Warum ein Geschäftskunden-DSL statt eines Privatanschlusses?",
+   "explanation": "Für Server braucht man eine feste öffentliche IP. Geschäftskunden-Anschlüsse haben zudem ein SLA mit garantierter Entstörzeit, oft auch symmetrische Bandbreite.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "WAN-Anschlüsse",
+    "line": 183
+   },
+   "ref": "feste öffentliche IP-Adresse(n), vertraglich zugesicherte Entstörzeit (SLA)",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Feste öffentliche IP-Adresse und vertraglich zugesicherte Entstörzeit (SLA)",
+    "Geschäftskunden-DSL ist immer günstiger",
+    "Nur Geschäftskunden bekommen IPv6",
+    "Privatanschlüsse erlauben kein HTTPS"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-gpon",
+   "category": "netzwerk",
+   "prompt": "Ein Glasfaseranschluss per GPON ist abends deutlich langsamer. Woran kann das liegen?",
+   "explanation": "Bei GPON wird eine Faser über passive Splitter auf viele Teilnehmer aufgeteilt. Nutzen viele gleichzeitig den Anschluss, sinkt die Bandbreite für jeden.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "WAN-Anschlüsse",
+    "line": 183
+   },
+   "ref": "Shared Medium: Alle Teilnehmer an einem Splitter teilen sich die Bandbreite",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "GPON ist ein Shared Medium – alle Teilnehmer am Splitter teilen sich die Bandbreite",
+    "Glasfaser wird abends kälter",
+    "GPON hat eine Reichweite von nur 100 m",
+    "GPON nutzt immer CGNAT"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-lte-cgnat",
+   "category": "netzwerk",
+   "prompt": "Eine Filiale nutzt LTE als Backup. Über die LTE-Leitung kann die Zentrale kein VPN zur Filiale aufbauen. Was ist die wahrscheinliche Ursache?",
+   "explanation": "Mobilfunkprovider nutzen oft CGNAT. Der Anschluss hat dann keine eigene öffentliche IPv4-Adresse, eingehende Verbindungen wie VPN-Server oder Portweiterleitungen sind nicht möglich.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "WAN-Anschlüsse",
+    "line": 183
+   },
+   "ref": "eingehende Verbindungen (Portweiterleitung, VPN-Server) sind nicht möglich",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Carrier-Grade-NAT beim Provider – keine eigene öffentliche IPv4, keine eingehenden Verbindungen",
+    "LTE unterstützt kein TCP",
+    "Die LTE-Bandbreite ist zu gering für VPN",
+    "Die Zentrale braucht einen zweiten DNS-Server"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-vpn-s2s",
+   "category": "netzwerk",
+   "prompt": "Die Zentrale in Köln und die Filiale in Bonn sollen dauerhaft verbunden werden. Die PCs sollen dafür keine Software brauchen. Welche VPN-Art passt?",
+   "explanation": "Ein Site-to-Site-VPN verbindet zwei Standorte dauerhaft über ihre Router bzw. Firewalls. Für die Endgeräte ist es unsichtbar.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "VPN",
+    "line": 190
+   },
+   "ref": "verbindet zwei Standorte dauerhaft über ihre Router bzw. Firewalls",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Site-to-Site-VPN zwischen den Firewalls",
+    "Remote-Access-VPN auf jedem PC",
+    "Ein Gast-WLAN",
+    "Eine Portweiterleitung"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-vpn-remote",
+   "category": "netzwerk",
+   "prompt": "Mitarbeiter im Homeoffice sollen auf den Dateiserver zugreifen. Welche VPN-Art nutzt man?",
+   "explanation": "Beim Remote-Access-VPN verbindet sich ein einzelnes Gerät mit einem VPN-Client ins Firmennetz.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "VPN",
+    "line": 190
+   },
+   "ref": "Ein einzelnes Gerät (z. B. im Homeoffice) verbindet sich mit einem VPN-Client ins Firmennetz",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Remote-Access-VPN (Client-to-Site) mit VPN-Client",
+    "Site-to-Site-VPN zu jedem Homeoffice",
+    "VLAN-Trunk ins Homeoffice",
+    "Captive Portal"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-vpn-cert",
+   "category": "netzwerk",
+   "prompt": "50 Außendienstler nutzen das VPN mit einem gemeinsamen Pre-Shared Key. Ein Mitarbeiter verlässt die Firma. Welcher Vorteil von Zertifikaten zeigt sich hier?",
+   "explanation": "Jedes Gerät oder jeder Benutzer hat ein eigenes Zertifikat, das einzeln widerrufen werden kann. Ein gemeinsamer PSK muss bei allen getauscht werden.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "VPN",
+    "line": 190
+   },
+   "ref": "Einzeln widerrufbar und gut skalierbar, dafür ist eine PKI nötig",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Mit Zertifikaten könnte man nur seinen Zugang widerrufen, beim PSK muss der Schlüssel überall getauscht werden",
+    "Zertifikate sind kürzer als ein PSK",
+    "Zertifikate brauchen keine PKI",
+    "Mit Zertifikaten ist das VPN schneller"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-tls-inspection",
+   "category": "netzwerk",
+   "prompt": "Nach dem Aktivieren der TLS-Inspection auf der NGFW zeigen alle Browser „NET::ERR_CERT_AUTHORITY_INVALID“. Was fehlt?",
+   "explanation": "Die NGFW stellt dem Client ein eigenes Zertifikat aus, signiert mit ihrer CA. Ist diese CA auf den Clients nicht vertrauenswürdig, meldet der Browser einen unbekannten Aussteller.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "NGFW und TLS-Inspection",
+    "line": 197
+   },
+   "ref": "muss das CA-Zertifikat der Firewall auf allen Clients als vertrauenswürdig installiert sein",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Das CA-Zertifikat der Firewall ist auf den Clients nicht als vertrauenswürdig installiert",
+    "Die Webserver haben abgelaufene Zertifikate",
+    "Die Uhrzeit der Firewall ist falsch",
+    "Der DNS-Server ist nicht erreichbar"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-browser-errors",
+   "category": "netzwerk",
+   "prompt": "Ordne die Browser-Fehlermeldung ihrer Ursache zu.",
+   "explanation": "Die Meldungen nennen den Grund im Namen: AUTHORITY = Aussteller, DATE = Gültigkeit, COMMON_NAME = Name.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "NGFW und TLS-Inspection",
+    "line": 197
+   },
+   "ref": "NET::ERR_CERT_DATE_INVALID = Zertifikat abgelaufen oder Uhrzeit des Clients falsch",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "match",
+   "pairs": [
+    {
+     "left": "NET::ERR_CERT_AUTHORITY_INVALID",
+     "right": "Aussteller nicht vertrauenswürdig"
+    },
+    {
+     "left": "NET::ERR_CERT_DATE_INVALID",
+     "right": "Abgelaufen oder Uhrzeit des Clients falsch"
+    },
+    {
+     "left": "NET::ERR_CERT_COMMON_NAME_INVALID",
+     "right": "Zertifikat gilt nicht für den aufgerufenen Namen"
+    }
+   ]
+  },
+  {
+   "id": "erg-tls-inspection-how",
+   "category": "netzwerk",
+   "prompt": "Wie kann eine NGFW in verschlüsselten HTTPS-Verkehr hineinsehen?",
+   "explanation": "Die TLS-Inspection arbeitet wie ein gewollter Man-in-the-Middle: zwei getrennte TLS-Verbindungen, dazwischen prüft die Firewall den Inhalt.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "NGFW und TLS-Inspection",
+    "line": 197
+   },
+   "ref": "Sie baut selbst die Verbindung zum Server auf",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Sie baut selbst die Verbindung zum Server auf und stellt dem Client ein eigenes, mit ihrer CA signiertes Zertifikat aus",
+    "Sie kennt die privaten Schlüssel aller Webserver",
+    "Sie entschlüsselt AES durch Ausprobieren",
+    "Gar nicht, HTTPS kann nie geprüft werden"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-arp-broadcast",
+   "category": "osi",
+   "prompt": "Ein PC kennt die IP-Adresse des Druckers im selben Netz, aber nicht dessen MAC-Adresse. Wie läuft ARP ab?",
+   "explanation": "Die ARP-Anfrage geht als Broadcast an alle im Netz, nur der Besitzer der IP antwortet per Unicast. Das Ergebnis landet im ARP-Cache (arp -a).",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "ARP, DHCP und Multicast",
+    "line": 204
+   },
+   "ref": "Die Anfrage geht als Broadcast an alle, die Antwort als Unicast zurück",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Anfrage als Broadcast an alle, Antwort als Unicast zurück",
+    "Anfrage als Unicast an den Drucker, Antwort als Broadcast",
+    "Anfrage an den DNS-Server",
+    "Anfrage an den DHCP-Server"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-garp",
+   "category": "osi",
+   "prompt": "Bei einem Firewall-Cluster wechselt die virtuelle IP auf das zweite Gerät. Wie erfahren die Clients sofort die neue MAC-Adresse?",
+   "explanation": "Beim Gratuitous ARP gibt ein Gerät ungefragt seine IP- und MAC-Adresse bekannt. So werden die ARP-Caches aktualisiert und doppelte IPs erkannt.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "ARP, DHCP und Multicast",
+    "line": 204
+   },
+   "ref": "die ARP-Caches nach einem Wechsel (z. B. Failover einer virtuellen IP) aktualisiert",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Durch einen Gratuitous ARP des übernehmenden Geräts",
+    "Durch einen neuen DHCP-Lease",
+    "Durch einen DNS-Eintrag",
+    "Gar nicht, sie müssen neu gestartet werden"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-dora",
+   "category": "osi",
+   "prompt": "Welche Nachricht schickt der Client im DHCP-Ablauf direkt nach dem Offer?",
+   "explanation": "DORA: Discover (Client sucht Server), Offer (Server bietet an), Request (Client fordert an), Acknowledge (Server bestätigt).",
+   "mnemonic": "DORA – wie der Name.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "ARP, DHCP und Multicast",
+    "line": 204
+   },
+   "ref": "Request (Client fordert die angebotene Adresse an)",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Request",
+    "Discover",
+    "Acknowledge",
+    "Release"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-dhcp-ports",
+   "category": "osi",
+   "prompt": "Für einen DHCP-Server in der DMZ wird eine Firewall-Regel erstellt. Welche Ports nutzt DHCP?",
+   "explanation": "DHCP läuft über UDP: Server auf Port 67, Client auf Port 68.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "ARP, DHCP und Multicast",
+    "line": 204
+   },
+   "ref": "Server nutzt UDP 67, Client UDP 68",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Server UDP 67, Client UDP 68",
+    "Server TCP 67, Client TCP 68",
+    "Server UDP 68, Client UDP 67",
+    "Server UDP 53, Client UDP 68"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-multicast-range",
+   "category": "ipv4",
+   "prompt": "Ein Videostream im Firmennetz nutzt die Zieladresse 239.1.1.10. Was für eine Adresse ist das?",
+   "explanation": "Der Multicast-Bereich reicht von 224.0.0.0 bis 239.255.255.255 (224.0.0.0/4). Ein Paket an diese Adresse erreicht alle Mitglieder der Gruppe.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "ARP, DHCP und Multicast",
+    "line": 204
+   },
+   "ref": "224.0.0.0 bis 239.255.255.255 (224.0.0.0/4)",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Eine Multicast-Adresse (224.0.0.0 bis 239.255.255.255)",
+    "Eine private Unicast-Adresse",
+    "Eine Broadcast-Adresse",
+    "Eine APIPA-Adresse"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-ipv6-linklocal",
+   "category": "ipv6",
+   "prompt": "Ein Server hat neben seiner globalen IPv6-Adresse auch fe80::1a2b:3cff:fe4d:5e6f. Was gilt für diese Adresse?",
+   "explanation": "Jede IPv6-Schnittstelle bildet sich automatisch eine Link-local-Adresse aus fe80::/10. Sie ist normal und wird z. B. als Gateway-Adresse genutzt.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "IPv6: SLAAC und DHCPv6",
+    "line": 211
+   },
+   "ref": "Sie gilt nur im lokalen Netzsegment und wird nicht geroutet",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Link-local: automatisch gebildet, gilt nur im lokalen Segment, wird nicht geroutet",
+    "Global erreichbar aus dem Internet",
+    "Eine Multicast-Adresse",
+    "Eine Fehlkonfiguration, die man entfernen sollte"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-slaac-ablauf",
+   "category": "ipv6",
+   "prompt": "Bei SLAAC schickt der Client eine Router Solicitation. Wie heißt die Antwort des Routers, die das /64-Präfix enthält?",
+   "explanation": "Der Router antwortet mit einem Router Advertisement (RA) mit dem /64-Präfix. Der Client hängt seine Interface-ID an.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "IPv6: SLAAC und DHCPv6",
+    "line": 211
+   },
+   "ref": "der Router antwortet mit einem Router Advertisement mit dem /64-Präfix",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "input",
+   "accepted": [
+    "Router Advertisement",
+    "RA"
+   ],
+   "compare": "text"
+  },
+  {
+   "id": "erg-slaac-gw",
+   "category": "ipv6",
+   "prompt": "Welche Adresse trägt ein Client bei SLAAC als Standard-Gateway ein?",
+   "explanation": "Das Gateway lernt der Client aus dem Router Advertisement: Es ist die Link-local-Adresse (fe80::…) des Routers.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "IPv6: SLAAC und DHCPv6",
+    "line": 211
+   },
+   "ref": "Standard-Gateway ist die Link-local-Adresse des Routers",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Die Link-local-Adresse des Routers",
+    "Die erste Adresse des /64-Präfixes",
+    "::1",
+    "Die Adresse des DHCPv6-Servers"
+   ],
+   "correct": 0
+  },
+  {
+   "id": "erg-dhcpv6-why",
+   "category": "ipv6",
+   "prompt": "Im Firmennetz funktioniert SLAAC. Warum setzt die Firma trotzdem DHCPv6 ein?",
+   "explanation": "SLAAC liefert Adresse und Gateway. DHCPv6 verteilt zentral DNS-Server und weitere Optionen und dokumentiert die Adressvergabe.",
+   "source": {
+    "file": "ergaenzungen.md",
+    "section": "IPv6: SLAAC und DHCPv6",
+    "line": 211
+   },
+   "ref": "um zentral DNS-Server und weitere Optionen zu verteilen",
+   "relevanz": "kern",
+   "origin": "curated",
+   "type": "mc",
+   "choices": [
+    "Um zentral DNS-Server und weitere Optionen zu verteilen und nachvollziehen zu können, wer welche Adresse hat",
+    "Weil SLAAC keine globalen Adressen erzeugen kann",
+    "Weil ohne DHCPv6 kein Routing möglich ist",
+    "Weil SLAAC nur mit /48 funktioniert"
    ],
    "correct": 0
   }

@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 import type { Question } from '../data/schema';
 import { ConfirmSheet } from '../components/ConfirmSheet';
 import { PageHeader } from '../components/PageHeader';
+import { GENERATORS } from '../generators';
 import { emptyProgress, mergeProgress, parseImport, today, type Progress } from '../lib/progress';
 
 interface Props {
@@ -19,6 +20,7 @@ export function Settings({ questions, progress, loadErrors, generatedAt, setProg
   const [pending, setPending] = useState<Progress | null>(null);
   const [ask, setAsk] = useState<'replace' | 'reset' | null>(null);
   const review = questions.filter((q) => q.needsReview);
+  const extraCount = questions.filter((q) => q.relevanz === 'extra').length;
 
   const set = (patch: Partial<Progress['settings']>) => setProgress({ ...progress, settings: { ...progress.settings, ...patch } });
 
@@ -126,6 +128,23 @@ export function Settings({ questions, progress, loadErrors, generatedAt, setProg
             ))}
           </select>
         </label>
+        <label className={row}>
+          <span>
+            <span className="block font-medium">Auch Extra-Fragen anzeigen</span>
+            <span className="text-xs text-stone-500">
+              {extraCount} Fragen mit Wissen, das in den IHK-Prüfungen 2021–2025 nicht abgefragt wurde
+            </span>
+          </span>
+          <input
+            type="checkbox"
+            role="switch"
+            checked={progress.settings.showExtra}
+            onChange={(e) => set({ showExtra: e.target.checked })}
+            className="h-7 w-12 shrink-0 cursor-pointer appearance-none rounded-full bg-stone-300 transition-colors before:block before:h-6 before:w-6 before:translate-x-0.5 before:rounded-full before:bg-white before:shadow before:transition-transform checked:bg-teal-600 checked:before:translate-x-[1.3rem] dark:bg-stone-700 dark:checked:bg-teal-500"
+            aria-describedby="extra-state"
+          />
+          <span id="extra-state" className="sr-only">{progress.settings.showExtra ? 'an' : 'aus'}</span>
+        </label>
       </section>
 
       <section className="space-y-3 rounded-3xl bg-white p-4 shadow-soft dark:bg-stone-900">
@@ -177,7 +196,8 @@ export function Settings({ questions, progress, loadErrors, generatedAt, setProg
       <section className="space-y-2 rounded-3xl bg-white p-4 shadow-soft dark:bg-stone-900">
         <h2 className="font-semibold">Inhalte</h2>
         <p className="text-sm text-stone-600 dark:text-stone-300">
-          {questions.length} Fragen · 14 Rechen-Generatoren · Stand {generatedAt}
+          {questions.length} Fragen ({questions.length - extraCount} Kern, {extraCount} Extra) · {GENERATORS.length} Rechen-Generatoren · Stand {generatedAt}
+          {!progress.settings.showExtra && <> · Extra-Fragen sind ausgeblendet</>}
         </p>
         {loadErrors.length > 0 && (
           <details className="rounded-2xl bg-amber-50 p-3 text-sm dark:bg-amber-950/40" open>

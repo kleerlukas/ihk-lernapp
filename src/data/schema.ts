@@ -16,6 +16,9 @@ export const CATEGORY_IDS = [
 ] as const;
 export type CategoryId = (typeof CATEGORY_IDS)[number];
 
+export const RELEVANZ = ['kern', 'extra'] as const;
+export type Relevanz = (typeof RELEVANZ)[number];
+
 const codeSchema = z.object({
   lang: z.enum(['csharp', 'sql', 'bash', 'text']),
   src: z.string().min(1),
@@ -40,6 +43,8 @@ const base = {
   source: sourceSchema,
   /** Kurzes Zitat aus der Quelle – generate prüft, dass es dort wirklich steht. */
   ref: z.string().optional(),
+  /** Prüfungsrelevanz: kern = kam in IHK-Prüfungen FISI 2021–2025 vor bzw. Grundlage dafür; extra = Nice-to-know. */
+  relevanz: z.enum(RELEVANZ).default('kern'),
   needsReview: z.boolean().optional(),
   reviewNote: z.string().optional(),
   origin: z.enum(['curated', 'extracted']).default('curated'),

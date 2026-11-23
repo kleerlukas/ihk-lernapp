@@ -30,6 +30,11 @@ function shuffle<T>(arr: T[], rnd = Math.random): T[] {
   return a;
 }
 
+/** Standard: nur prüfungsrelevante Kern-Fragen; Extra-Fragen nur, wenn eingeschaltet. */
+export function activeQuestions(questions: Question[], showExtra: boolean): Question[] {
+  return showExtra ? questions : questions.filter((q) => q.relevanz !== 'extra');
+}
+
 const qItem = (q: Question): SessionItem => ({ kind: 'question', key: q.id, question: q });
 
 export function calcItem(generatorId: string): SessionItem | null {

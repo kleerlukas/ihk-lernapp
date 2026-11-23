@@ -28,7 +28,7 @@ for (const f of mdFiles) md.set(f, readFileSync(join(contentDir, f), 'utf8'));
 // 2) Kuratierte Fragen
 const curatedFiles = existsSync(curatedDir) ? readdirSync(curatedDir).filter((f) => f.endsWith('.json')).sort() : [];
 for (const f of curatedFiles) {
-  let data: { file?: string; category?: string; section?: string; questions?: Record<string, unknown>[] };
+  let data: { file?: string; category?: string; section?: string; relevanz?: string; questions?: Record<string, unknown>[] };
   try {
     data = JSON.parse(readFileSync(join(curatedDir, f), 'utf8'));
   } catch (e) {
@@ -36,9 +36,11 @@ for (const f of curatedFiles) {
     continue;
   }
   for (const q of data.questions ?? []) {
+    if (!q.relevanz && !data.relevanz) errors.push(`curated/${f} › ${q.id}: "relevanz" fehlt ("kern" oder "extra")`);
     const src = (q.source ?? {}) as Record<string, unknown>;
     raw.push({
       category: data.category,
+      relevanz: data.relevanz,
       origin: 'curated',
       ...q,
       source: { file: data.file, section: data.section, ...src },
@@ -61,7 +63,7 @@ for (const [f, text] of md) {
   for (const q of extractQuestions(text, { file: f, defaultCategory: cat as CategoryId })) {
     const qq = q as Record<string, unknown>;
     if (qq.error) errors.push(`${f}: ${qq.error}`);
-    else raw.push({ ...qq, _from: f });
+    else raw.push({ relevanz: meta.relevanz ?? 'kern', ...qq, _from: f });
   }
 }
 
@@ -105,6 +107,8 @@ console.log(`\n✔ ${questions.length} Fragen → src/data/questions.json`);
 for (const c of CATEGORY_IDS) console.log(`  ${c.padEnd(15)} ${String(byCat.get(c) ?? 0).padStart(4)}`);
 const types = new Map<string, number>();
 for (const q of questions) types.set(q.type, (types.get(q.type) ?? 0) + 1);
+const extra = questions.filter((q) => q.relevanz === 'extra').length;
+console.log(`  Relevanz: kern ${questions.length - extra}, extra ${extra}`);
 console.log(`  Typen: ${[...types].map(([t, n]) => `${t} ${n}`).join(', ')}`);
 if (review.length) {
   console.log(`\n⚑ ${review.length} Fragen mit needsReview:`);

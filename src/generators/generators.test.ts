@@ -5,6 +5,7 @@ import { capacityForMaxUsage, gibToTib, storageNeed, tibToGib } from './storage'
 import { raidDisksNeeded, raidNetCapacity } from './raid';
 import { downtimeHours, parallelAvailability, powerCostPerYear, transferSeconds } from './formulas';
 import { hopsFromTtl, octalToRwx, rwxToOctal } from './misc';
+import { mtbfArray, poeRest, usvUsedPercent } from './hardware';
 import { GENERATORS } from './index';
 import { createRng } from './types';
 import { answerMatches } from '../lib/compare';
@@ -209,5 +210,21 @@ describe('Alle Generatoren', () => {
       }
       expect(prevEnd).toBeLessThanOrEqual(end);
     }
+  });
+});
+
+describe('USV, MTBF, PoE (Lernzettel + Ergänzungen)', () => {
+  it('USV-Laufzeit linear (Lernzettel: 60 min = 100 % → 3 min = 5 %)', () => {
+    expect(usvUsedPercent(3, 60)).toBeCloseTo(5);
+    expect(usvUsedPercent(10, 40)).toBeCloseTo(25);
+  });
+  it('MTBF Verbund (Winter 2021: 800.000 h / 16 = 50.000 h ≈ 5,7 Jahre)', () => {
+    expect(mtbfArray(800_000, 16)).toBe(50_000);
+    expect(mtbfArray(800_000, 16) / 8760).toBeCloseTo(5.71, 2);
+  });
+  it('PoE-Budget (Lernzettel: 8 × 17,9 W = 143,2 W)', () => {
+    expect(poeRest(370, [{ count: 8, watt: 17.9 }]).total).toBe(143.2);
+    expect(poeRest(370, [{ count: 12, watt: 13 }, { count: 6, watt: 25.5 }])).toEqual({ total: 309, rest: 61 });
+    expect(poeRest(120, [{ count: 10, watt: 15.4 }]).rest).toBe(-34);
   });
 });

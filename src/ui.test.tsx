@@ -184,4 +184,15 @@ describe('App', () => {
       if (screen.queryByText('Geschafft!')) break;
     }
   });
+
+  it('Extra-Fragen sind standardmäßig aus und lassen sich in den Einstellungen einschalten', () => {
+    render(<App />);
+    fireEvent.click(screen.getByRole('button', { name: 'Einstellungen' }));
+    const sw = screen.getByRole('switch', { name: /Auch Extra-Fragen anzeigen/ }) as HTMLInputElement;
+    expect(sw.checked).toBe(false);
+    expect(screen.getByText(/Extra-Fragen sind ausgeblendet/)).toBeTruthy();
+    fireEvent.click(sw);
+    expect(sw.checked).toBe(true);
+    expect(JSON.parse(localStorage.getItem('ap2-lernapp-progress-v1')!).settings.showExtra).toBe(true);
+  });
 });

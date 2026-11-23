@@ -33,6 +33,8 @@ export const progressSchema = z.object({
   settings: z.object({
     dailyGoal: z.number().int().min(5).max(500),
     newPerDay: z.number().int().min(0).max(100),
+    /** Auch Fragen mit relevanz "extra" abfragen (Standard: nur Kern-Wissen). */
+    showExtra: z.boolean().default(false),
   }),
   exams: z.array(examSchema),
 });
@@ -42,7 +44,7 @@ export const emptyProgress = (): Progress => ({
   version: 1,
   cards: {},
   days: {},
-  settings: { dailyGoal: 30, newPerDay: 10 },
+  settings: { dailyGoal: 30, newPerDay: 10, showExtra: false },
   exams: [],
 });
 
